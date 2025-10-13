@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
+.App{
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: repeat(6, minmax(75px, 1fr));
+  gap: 1rem;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  & div{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f0f0f0;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  & #about{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    background-color: pink;
+  }
+
+  & #language{
+    grid-column: 4 / span 2;
+    grid-row: 1 / 1;
+    background-color: lightblue;
+  }
+
+  & #github{
+
+  }
+    & #mail{
+
+  }
+    & #linkedin{
+
+  }
+    & #phone{
+
+  }
+
+  & #project1{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    background-color: lime;
+  }
+
+    & #project2{
+    grid-column: 2 / span 4;
+    grid-row: 4 / span 1;
+    background-color: cyan;
+  }
+
+  & #project3{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    background-color: lightcoral;
+  }
+
+    & #projects{
+    grid-column: 3 / span 3;
+    grid-row: 5 / span 1;
+    background-color: rebeccapurple;
+  }
+
+    & #blog{
+    grid-column: 1 / span 5;
+    grid-row: 6 / span 1;
+    background-color: green;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .App {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    gap: 0.5rem;
+    padding: 1rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .App #about{
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2
+  }
+  .App #language{
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1
+  }
+    & #github{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1
+  }
+    & #mail{
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1
+  }
+    & #linkedin{
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1
+  }
+    & #phone{
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1
+  }
+  .App #project1{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1
+  }
+  .App #project2{
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 1
+  }
+  .App #project3{
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1
+  }
+  .App #projects{
+    grid-column: 3 / span 2;
+    grid-row: 6 / span 1
+  }
+  .App #blog {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 1
+  }
 }
