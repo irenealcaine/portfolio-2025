@@ -1,5 +1,7 @@
 import NeonCard from "../../Components/NeonCard/NeonCard"
 import "./Home.css"
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const HomePage = () => {
   return (
@@ -14,19 +16,19 @@ const HomePage = () => {
       </NeonCard>
 
       <NeonCard id="github" color="yellow">
-        <p>Github</p>
+        <FiGithub />
       </NeonCard>
 
       <NeonCard id="mail" color="red">
-        <p>Mail</p>
+        <FiMail />
       </NeonCard>
 
       <NeonCard id="phone" color="lime">
-        <p>Phone</p>
+        <IoLogoWhatsapp />
       </NeonCard>
 
       <NeonCard id="linkedin" color="light-blue">
-        <p>LinkedIn</p>
+        <FiLinkedin />
       </NeonCard>
 
       <NeonCard id="project1" color="orange">
