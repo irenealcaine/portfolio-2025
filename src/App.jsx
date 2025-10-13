@@ -1,23 +1,25 @@
 
 import './App.css'
 
-function App() {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from './Pages/Home/Home';
+import AboutPage from './Pages/About/About';
+import PortfolioPage from './Pages/Portfolio/Portfolio';
+import NotFoundPage from './Pages/NotFound/NotFound';
 
+function App() {
   return (
-    <main className="App">
-      <div id='about'></div>
-      <div id='language'></div>
-      <div id='github'></div>
-      <div id='mail'></div>
-      <div id='phone'></div>
-      <div id='linkedin'></div>
-      <div id='project1'></div>
-      <div id='project2'></div>
-      <div id='project3'></div>
-      <div id='projects'></div>
-      <div id='blog'></div>
-    </main>
-  )
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/about" exact element={<AboutPage />} />
+          <Route path="*" exact element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
