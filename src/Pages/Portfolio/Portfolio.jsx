@@ -1,8 +1,10 @@
-
+import Layout from "../../Components/Layout/Layout"
 
 const PortfolioPage = () => {
   return (
-    <div>Portfolio</div>
+    <Layout>
+      <div>Portfolio</div>
+    </Layout>
   )
 }
 

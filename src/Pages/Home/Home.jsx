@@ -1,6 +1,8 @@
 import NeonCard from "../../Components/NeonCard/NeonCard"
 import "./Home.css"
 import { socialMedia } from "../../data/socialMedia.jsx"
+import { IoLanguage } from "react-icons/io5";
+import { mainProjects } from "../../data/mainProjects.jsx";
 
 const HomePage = () => {
   return (
@@ -10,9 +12,7 @@ const HomePage = () => {
         <h2>Developer</h2>
       </NeonCard>
 
-      <NeonCard id="language" color="orange">
-        <p>EN/ES</p>
-      </NeonCard>
+      <div id="language" ><IoLanguage size="1.5em" /></div>
 
       {socialMedia.map((media) => (
         <NeonCard key={media.id} id={media.id} color={media.color} href={media.href}>
@@ -20,7 +20,7 @@ const HomePage = () => {
         </NeonCard>
       ))}
 
-      <NeonCard id="project1" color="orange">
+      {/* <NeonCard id="project1" color="orange">
         <p>Project 1</p>
       </NeonCard>
 
@@ -30,7 +30,14 @@ const HomePage = () => {
 
       <NeonCard id="project3" color="purple">
         <p>Project 3 </p>
-      </NeonCard>
+      </NeonCard> */}
+
+      {mainProjects.map((project) => (
+        <NeonCard key={project.id} id={project.id} color={project.color} href={project.href}>
+          <h2>{project.title}</h2>
+          <p>{project.short_description}</p>
+        </NeonCard>
+      ))}
 
       <NeonCard id="projects" color="dark-blue" to={"/portfolio"}>
         <p>Projects</p>

@@ -10,7 +10,6 @@
   & div{
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: #f0f0f0;
   }
 
   & #about{
@@ -21,6 +20,10 @@
   & #language{
     grid-column: 4 / span 2;
     grid-row: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 
   & #project1{
@@ -74,7 +77,8 @@
     }
     & #language{
       grid-column: 4 / span 1;
-      grid-row: 1 / span 1
+      grid-row: 1 / span 1;
+      justify-content: end;
     }
       & #github{
       grid-column: 1 / span 1;

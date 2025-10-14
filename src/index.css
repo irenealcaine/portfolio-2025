@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,200&family=Poppins:wght@100;300;400;700&display=swap");
+
 *{
   margin: 0;
   padding: 0;
@@ -7,12 +9,33 @@ body{
   min-height: 100dvh;
   background-color: #222;
   color: white;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; */
 }
-h1, h2, h3{
+h1, h2, h3, h4{
   text-wrap: balance;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
 }
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
 p{
   text-wrap: pretty;
+  font-family: "Poppins", sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -25,4 +48,26 @@ img, svg, video{
   display:block;
   height: auto;
   max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

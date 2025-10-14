@@ -1,3 +1,4 @@
+
 :root {
   --pink: rgb(255, 0, 221);
   --orange: rgb(255, 153, 0);
@@ -15,7 +16,7 @@
 .neon-card{
   border: 2px solid white;
   border-radius: 12px;
-  padding: 1rem;
+  padding: .5rem 1rem;
   background-color: transparent;
   box-shadow: 0 0 20px var(--color), inset 0 0 20px var(--color);
 
