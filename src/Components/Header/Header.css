@@ -4,4 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 10px #fff;
+
+  & h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink);
+  }
 }
