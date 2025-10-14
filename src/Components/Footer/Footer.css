@@ -4,4 +4,9 @@
   border-top: 2px solid #fff;
   bottom: 0;
   position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
