@@ -1,0 +1,44 @@
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.language-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.language-toggle:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.language-text {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Para el uso en NeonCard */
+.language-toggle.neon-card-style {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: inherit;
+}
+
+.language-toggle.neon-card-style .language-text {
+  margin-top: 0.25rem;
+  font-size: 0.7em;
+}

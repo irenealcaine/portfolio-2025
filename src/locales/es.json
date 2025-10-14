@@ -1,0 +1,36 @@
+{
+  "common": {
+    "developer": "Desarrolladora",
+    "projects": "Proyectos",
+    "blog": "Blog"
+  },
+  "home": {
+    "name": "Irene Alcaine",
+    "role": "Desarrolladora",
+    "description": "Desarrolladora full-stack apasionada con experiencia en tecnologías modernas. Me encanta crear soluciones innovadoras y aprender constantemente nuevas herramientas para construir experiencias digitales increíbles.",
+    "aboutMore": "Me especializo en desarrollo web usando React, Node.js y frameworks modernos. Mi enfoque está en crear aplicaciones limpias, eficientes y fáciles de usar."
+  },
+  "header": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "projects": {
+    "project1": {
+      "title": "Proyecto 1",
+      "description": "Esta es una descripción detallada del proyecto 1 que muestra técnicas modernas de desarrollo web."
+    },
+    "project2": {
+      "title": "Proyecto 2",
+      "description": "Esta es una descripción detallada del proyecto 2 con soluciones innovadoras."
+    },
+    "project3": {
+      "title": "Proyecto 3",
+      "description": "Esta es una descripción detallada del proyecto 3 con tecnologías de vanguardia."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Irene Alcaine. Todos los derechos reservados."
+  }
+}

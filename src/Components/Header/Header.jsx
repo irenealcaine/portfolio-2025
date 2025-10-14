@@ -1,12 +1,15 @@
 import "./Header.css"
-import { IoLanguage } from "react-icons/io5";
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
+import LanguageToggle from "../LanguageToggle/LanguageToggle.jsx"
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="header">
-      <Link to="/"><h1>Irene Alcaine</h1></Link>
-      <IoLanguage size="1.5em" />
+      <Link to="/"><h1>{t('home.name')}</h1></Link>
+      <LanguageToggle />
     </div>
   )
 }

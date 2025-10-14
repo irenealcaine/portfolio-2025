@@ -1,0 +1,36 @@
+{
+  "common": {
+    "developer": "Developer",
+    "projects": "Projects",
+    "blog": "Blog"
+  },
+  "home": {
+    "name": "Irene Alcaine",
+    "role": "Developer",
+    "description": "Passionate full-stack developer with experience in modern technologies. I love creating innovative solutions and constantly learning new tools to build amazing digital experiences.",
+    "aboutMore": "I specialize in web development using React, Node.js, and modern frameworks. My focus is on creating clean, efficient, and user-friendly applications."
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "projects": {
+    "project1": {
+      "title": "Project 1",
+      "description": "This is a detailed description of project 1 showcasing modern web development techniques."
+    },
+    "project2": {
+      "title": "Project 2",
+      "description": "This is a detailed description of project 2 featuring innovative solutions."
+    },
+    "project3": {
+      "title": "Project 3",
+      "description": "This is a detailed description of project 3 with cutting-edge technologies."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Irene Alcaine. All rights reserved."
+  }
+}
