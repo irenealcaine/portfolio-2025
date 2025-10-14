@@ -10,6 +10,8 @@ const HomePage = () => {
       <NeonCard id="about" color="pink" to={"/about"}>
         <h1>Irene Alcaine</h1>
         <h2>Developer</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem atque, blanditiis ad voluptatem eum voluptatum incidunt aperiam impedit. Id sit totam porro rerum minus omnis illum nemo quam, deserunt enim!
+          Quod quibusdam ad tempora ducimus, velit nam repellendus unde saepe. Repudiandae vitae at a quia illo fuga reiciendis impedit cumque sed fugit vel ut eos quam, nam repellat velit molestias.</p>
       </NeonCard>
 
       <div id="language" ><IoLanguage size="1.5em" /></div>
