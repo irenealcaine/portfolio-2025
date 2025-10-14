@@ -1,10 +1,12 @@
 import icon from "../assets/react.svg"
+import react from "../assets/react.svg"
+import firebase from "../assets/firebase.svg"
 
 export const mainProjects = [
   {
     id: "project1",
     icon: icon,
-    tech: [icon, icon],
+    tech: [react, firebase],
     color: "purple",
     href: "https://www.google.es",
     github: "https://www.google.es"
