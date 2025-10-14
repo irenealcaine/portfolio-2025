@@ -36,6 +36,12 @@ const HomePage = () => {
         <NeonCard key={project.id} id={project.id} color={project.color} href={project.href}>
           <h2>{project.title}</h2>
           <p>{project.short_description}</p>
+          <div className="techs">
+            {project.tech.map((icon, index) => (
+              <img className="tech" key={index} src={icon} alt={`Tech icon ${index}`} />
+            ))}
+          </div>
+          <img className="icon" src={project.icon} alt={`${project.title} icon`} />
         </NeonCard>
       ))}
 
