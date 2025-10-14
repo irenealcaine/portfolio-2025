@@ -13,9 +13,6 @@ const LanguageToggle = ({ size = "1.5em", className = "" }) => {
       aria-label={`Change language to ${currentLanguage === 'es' ? 'English' : 'Spanish'}`}
     >
       <IoLanguage size={size} />
-      <span className="language-text">
-        {currentLanguage === 'es' ? 'EN' : 'ES'}
-      </span>
     </button>
   );
 };

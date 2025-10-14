@@ -16,9 +16,9 @@ const HomePage = () => {
         <p>{t('home.description')}</p>
       </NeonCard>
 
-      <NeonCard id="language" color="orange">
-        <LanguageToggle className="neon-card-style" />
-      </NeonCard>
+      <div id="language">
+        <LanguageToggle />
+      </div>
 
       {socialMedia.map((media) => (
         <NeonCard key={media.id} id={media.id} color={media.color} href={media.href}>
