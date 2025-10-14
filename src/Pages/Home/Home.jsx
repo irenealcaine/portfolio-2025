@@ -5,7 +5,7 @@ import { socialMedia } from "../../data/socialMedia.jsx"
 const HomePage = () => {
   return (
     <main className="home">
-      <NeonCard id="about" color="pink">
+      <NeonCard id="about" color="pink" to={"/about"}>
         <h1>Irene Alcaine</h1>
         <h2>Developer</h2>
       </NeonCard>
@@ -32,7 +32,7 @@ const HomePage = () => {
         <p>Project 3 </p>
       </NeonCard>
 
-      <NeonCard id="projects" color="dark-blue">
+      <NeonCard id="projects" color="dark-blue" to={"/portfolio"}>
         <p>Projects</p>
       </NeonCard>
 
