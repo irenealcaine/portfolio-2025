@@ -1,7 +1,6 @@
 import NeonCard from "../../Components/NeonCard/NeonCard"
 import "./Home.css"
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import { IoLogoWhatsapp } from "react-icons/io5";
+import { socialMedia } from "../../data/socialMedia.jsx"
 
 const HomePage = () => {
   return (
@@ -15,21 +14,11 @@ const HomePage = () => {
         <p>EN/ES</p>
       </NeonCard>
 
-      <NeonCard id="github" color="yellow">
-        <FiGithub />
-      </NeonCard>
-
-      <NeonCard id="mail" color="red">
-        <FiMail />
-      </NeonCard>
-
-      <NeonCard id="phone" color="lime">
-        <IoLogoWhatsapp />
-      </NeonCard>
-
-      <NeonCard id="linkedin" color="light-blue">
-        <FiLinkedin />
-      </NeonCard>
+      {socialMedia.map((media) => (
+        <NeonCard key={media.id} id={media.id} color={media.color} href={media.href}>
+          {media.icon}
+        </NeonCard>
+      ))}
 
       <NeonCard id="project1" color="orange">
         <p>Project 1</p>
