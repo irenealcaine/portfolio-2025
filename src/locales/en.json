@@ -30,6 +30,10 @@
       "description": "This is a detailed description of project 3 with cutting-edge technologies."
     }
   },
+  "portfolio": {
+    "home": "Portfolio",
+    "description": "All my projects and websites"
+  },
   "footer": {
     "copyright": "© 2025 Irene Alcaine. All rights reserved."
   }

@@ -4,6 +4,9 @@ import { socialMedia } from "../../data/socialMedia.jsx"
 import { mainProjects } from "../../data/mainProjects.jsx"
 import { useTranslation } from "react-i18next"
 import LanguageToggle from "../../Components/LanguageToggle/LanguageToggle.jsx"
+import react from "../../assets/react.svg"
+import firebase from "../../assets/firebase.svg"
+import tailwind from "../../assets/tailwind.svg"
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -40,7 +43,11 @@ const HomePage = () => {
       ))}
 
       <NeonCard id="projects" color="dark-blue" to={"/portfolio"}>
-        <p>{t('common.projects')}</p>
+        <h2>{t('portfolio.home')}</h2>
+        <p>{t('portfolio.description')}</p>
+        <img className="projects-icon icon1" src={react} alt="React icon" />
+        <img className="projects-icon icon2" src={firebase} alt="Firebase icon" />
+        <img className="projects-icon icon3" src={tailwind} alt="Tailwind icon" />
       </NeonCard>
 
       <NeonCard id="blog" color="green">
