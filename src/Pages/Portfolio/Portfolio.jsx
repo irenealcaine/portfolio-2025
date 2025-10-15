@@ -2,42 +2,44 @@ import React, { useState } from "react";
 import Layout from "../../Components/Layout/Layout";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import "./Portfolio.css";
+import react from "../../assets/react.svg"
+import firebase from "../../assets/firebase.svg"
 
 // Ejemplo de proyectos
 const projects = [
   {
     id: 1,
     title: "WeatherApp",
-    logo: "https://cdn-icons-png.flaticon.com/512/1116/1116453.png",
+    logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=WeatherApp",
-    technologies: ["React", "Vite", "CSS"],
+    technologies: [react, firebase],
     description:
       "Aplicación para consultar el clima en tiempo real usando una API pública.",
   },
   {
     id: 2,
     title: "Task Manager",
-    logo: "https://cdn-icons-png.flaticon.com/512/1828/1828911.png",
+    logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
-    technologies: ["React", "Redux", "Node.js"],
+    technologies: [react, firebase],
     description:
       "Gestor de tareas con autenticación y sincronización en la nube.",
   },
   {
     id: 3,
     title: "Portfolio 2025",
-    logo: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
-    technologies: ["React", "Vite", "Sass"],
+    technologies: [react, firebase],
     description:
       "Sitio web personal para mostrar proyectos y experiencia profesional.",
   },
   {
     id: 4,
     title: "E-commerce Demo",
-    logo: "https://cdn-icons-png.flaticon.com/512/1170/1170678.png",
+    logo: firebase,
     screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
-    technologies: ["React", "Express", "MongoDB"],
+    technologies: [react, firebase],
     description:
       "Tienda online con carrito, pagos y panel de administración.",
   },
@@ -82,7 +84,7 @@ const PortfolioPage = () => {
                     filter === tech ? "bold" : "normal",
                 }}
               >
-                {tech}
+                tech
               </button>
             ))}
           </div>

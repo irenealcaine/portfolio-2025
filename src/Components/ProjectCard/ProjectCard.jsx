@@ -5,10 +5,9 @@ const ProjectCard = ({ title, logo, screenshot, technologies, description }) => 
   <div className="project-card">
     <img src={logo} alt={`${title} logo`} className="project-logo" /> 
     <h3>{title}</h3>
-    <p>{description}</p>
     <div className="project-techs">
       {technologies.map((tech) => (
-        <span key={tech} className="project-tech">{tech}</span>
+          <img key={tech} src={tech} alt={`${title} ${tech}`} className="project-tech"/>
       ))}
     </div>
   </div>
