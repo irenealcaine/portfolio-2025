@@ -21,7 +21,7 @@ const projects = [
     title: "Task Manager",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
-    technologies: [react, firebase],
+    technologies: [firebase],
     description:
       "Gestor de tareas con autenticación y sincronización en la nube.",
   },
@@ -30,12 +30,47 @@ const projects = [
     title: "Portfolio 2025",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
-    technologies: [react, firebase],
+    technologies: [react],
     description:
       "Sitio web personal para mostrar proyectos y experiencia profesional.",
   },
   {
     id: 4,
+    title: "E-commerce Demo",
+    logo: firebase,
+    screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
+    technologies: [react, firebase],
+    description:
+      "Tienda online con carrito, pagos y panel de administración.",
+  },{
+    id: 5,
+    title: "WeatherApp",
+    logo: react,
+    screenshot: "https://via.placeholder.com/350x120?text=WeatherApp",
+    technologies: [react, firebase],
+    description:
+      "Aplicación para consultar el clima en tiempo real usando una API pública.",
+  },
+  {
+    id: 6,
+    title: "Task Manager",
+    logo: react,
+    screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
+    technologies: [react],
+    description:
+      "Gestor de tareas con autenticación y sincronización en la nube.",
+  },
+  {
+    id: 7,
+    title: "Portfolio 2025",
+    logo: react,
+    screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
+    technologies: [react],
+    description:
+      "Sitio web personal para mostrar proyectos y experiencia profesional.",
+  },
+  {
+    id: 8,
     title: "E-commerce Demo",
     logo: firebase,
     screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
@@ -84,7 +119,7 @@ const PortfolioPage = () => {
                     filter === tech ? "bold" : "normal",
                 }}
               >
-                tech
+                <img src={tech} alt={tech} style={{width: '16px', height: '16px', verticalAlign: 'middle', marginRight: '4px'}} />
               </button>
             ))}
           </div>
