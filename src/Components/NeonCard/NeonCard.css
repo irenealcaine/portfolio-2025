@@ -10,7 +10,18 @@
   --green: rgb(0, 128, 11);
   --lime: rgb(119, 204, 0);
 
-  --color: #fff;
+  --pink-rgba: rgba(255, 0, 221, 0.1);
+  --orange-rgba: rgba(255, 153, 0, 0.1);
+  --yellow-rgba: rgba(255, 238, 0, 0.1);
+  --dark-blue-rgba: rgba(0, 30, 255, 0.1);
+  --red-rgba: rgba(255, 0, 0, 0.1);
+  --light-blue-rgba: rgba(0, 229, 255, 0.1);
+  --purple-rgba: rgba(85, 0, 124, 0.1);
+  --green-rgba: rgba(0, 128, 11, 0.1);
+  --lime-rgba: rgba(119, 204, 0, 0.1);
+
+  --color: rgb(255, 255, 255);
+  --color-rgba: rgba(255, 255, 255, 0.5);
 }
 
 .neon-card{
@@ -19,41 +30,57 @@
   padding: 1rem 2rem;
   background-color: transparent;
   box-shadow: 0 0 20px var(--color), inset 0 0 20px var(--color);
+  transition: all .2s ease;
+
+  &:hover{
+    box-shadow: 0 0 20px var(--color), inset 0 0 20px var(--color), 0 0 5px var(--color), inset 0 0 5px var(--color);
+    background-color: var(--color-rgba);
+    transform: scale(1.01);
+  }
 
   &.pink{
     --color: var(--pink);
+    --color-rgba: var(--pink-rgba);
   }
 
     &.orange{
    --color: var(--orange);
+   --color-rgba: var(--orange-rgba);
   }
 
     &.yellow{
    --color: var(--yellow);
+   --color-rgba: var(--yellow-rgba);
   }
 
     &.dark-blue{
    --color: var(--dark-blue);
+   --color-rgba: var(--dark-blue-rgba);
   }
 
     &.red{
    --color: var(--red);
+   --color-rgba: var(--red-rgba);
   }
 
     &.light-blue{
    --color: var(--light-blue);
+   --color-rgba: var(--light-blue-rgba);
   }
 
     &.purple{
    --color: var(--purple);
+   --color-rgba: var(--purple-rgba);  
   }
 
     &.green{
    --color: var(--green);
+   --color-rgba: var(--green-rgba);
   }
 
     &.lime{
    --color: var(--lime);
+   --color-rgba: var(--lime-rgba);
   }
 }
 @media (max-width: 600px) {
