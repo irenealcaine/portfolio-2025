@@ -9,7 +9,7 @@ import NotFoundPage from './Pages/NotFound/NotFound';
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<HomePage />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="*" exact element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

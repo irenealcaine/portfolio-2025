@@ -1,5 +1,12 @@
-main{
+.layout {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
+  flex: 1;
 }
