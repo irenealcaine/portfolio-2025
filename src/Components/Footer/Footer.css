@@ -3,7 +3,7 @@
   padding: 20px;
   border-top: 2px solid #fff;
   bottom: 0;
-  position: absolute;
+  position: static;
 
   display: flex;
   justify-content: center;
