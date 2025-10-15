@@ -1,8 +1,8 @@
-.project-card {
+  .project-card {
   border: 2px solid #eee;
   border-radius: 10px;
   padding: 1rem;
-  width: 32%;
+  width: 23%;
   min-width: 200px;
   max-width: 350px;
   aspect-ratio: 1/1;
@@ -60,4 +60,10 @@
     }
   }
 
+}
+
+@media (max-width: 600px) {
+ .project-card {
+    min-width: 150px;
+  }
 }

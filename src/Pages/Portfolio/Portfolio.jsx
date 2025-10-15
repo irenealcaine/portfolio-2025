@@ -9,6 +9,7 @@ import firebase from "../../assets/firebase.svg"
 const projects = [
   {
     id: 1,
+    slug: "slug-1",
     title: "WeatherApp",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=WeatherApp",
@@ -18,6 +19,7 @@ const projects = [
   },
   {
     id: 2,
+    slug: "slug-2",
     title: "Task Manager",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
@@ -27,6 +29,7 @@ const projects = [
   },
   {
     id: 3,
+    slug: "slug-3",
     title: "Portfolio 2025",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
@@ -36,6 +39,7 @@ const projects = [
   },
   {
     id: 4,
+    slug: "slug-4",
     title: "E-commerce Demo",
     logo: firebase,
     screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
@@ -44,6 +48,7 @@ const projects = [
       "Tienda online con carrito, pagos y panel de administración.",
   },{
     id: 5,
+    slug: "slug-5",
     title: "WeatherApp",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=WeatherApp",
@@ -53,6 +58,7 @@ const projects = [
   },
   {
     id: 6,
+    slug: "slug-6",
     title: "Task Manager",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
@@ -62,6 +68,7 @@ const projects = [
   },
   {
     id: 7,
+    slug: "slug-7",
     title: "Portfolio 2025",
     logo: react,
     screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
@@ -71,6 +78,7 @@ const projects = [
   },
   {
     id: 8,
+    slug: "slug-8",
     title: "E-commerce Demo",
     logo: firebase,
     screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
