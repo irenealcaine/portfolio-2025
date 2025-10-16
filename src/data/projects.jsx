@@ -106,4 +106,17 @@ export const projects = [
     github: "https://github.com/tu-usuario/ecommerce-admin",
     color: "red"
   },
+  {
+    id: 9,
+    slug: "slug-9",
+    title: "E-commerce Demo (Admin)",
+    logo: firebase,
+    screenshot: "https://picsum.photos/500/400",
+    technologies: [firebase],
+    description:
+      "Tienda online con carrito, pagos y panel de administración.",
+    url: "https://ecommerce-admin.example.com",
+    github: "https://github.com/tu-usuario/ecommerce-admin",
+    color: "lime"
+  },
 ];
