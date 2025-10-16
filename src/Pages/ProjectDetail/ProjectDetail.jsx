@@ -1,31 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "../../Components/Layout/Layout";
-
-const projects = [
-  {
-    slug: "slug-1",
-    title: "WeatherApp",
-    logo: "https://cdn-icons-png.flaticon.com/512/1116/1116453.png",
-    screenshot: "https://t3.ftcdn.net/jpg/05/12/68/88/240_F_512688862_AjDnp2NNDitbnFF5s2Qk4oEVfm7aqXdI.jpg",
-    technologies: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-    ],
-    description: "Aplicación para consultar el clima en tiempo real usando una API pública.",
-  },
-  {
-    slug: "slug-2",
-    title: "Task Manager",
-    logo: "https://cdn-icons-png.flaticon.com/512/1116/1116453.png",
-    screenshot: "https://t3.ftcdn.net/jpg/03/67/77/00/240_F_367770009_35K04UmNrVB0me5tPtFfJen7LMhxrcDl.jpg",
-    technologies: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-    ],
-    description: "Aplicación para consultar el clima en tiempo real usando una API pública.",
-  },
-];
+import { projects } from "../../data/projects";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
