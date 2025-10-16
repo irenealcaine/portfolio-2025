@@ -7,7 +7,7 @@ export const projects = [
     slug: "slug-1",
     title: "WeatherApp",
     logo: react,
-    screenshot: "https://via.placeholder.com/350x120?text=WeatherApp",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react, firebase],
     description:
       "Aplicación para consultar el clima en tiempo real usando una API pública.",
@@ -20,7 +20,7 @@ export const projects = [
     slug: "slug-2",
     title: "Task Manager",
     logo: react,
-    screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [firebase],
     description:
       "Gestor de tareas con autenticación y sincronización en la nube.",
@@ -33,7 +33,7 @@ export const projects = [
     slug: "slug-3",
     title: "Portfolio 2025",
     logo: react,
-    screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react],
     description:
       "Sitio web personal para mostrar proyectos y experiencia profesional.",
@@ -46,7 +46,7 @@ export const projects = [
     slug: "slug-4",
     title: "E-commerce Demo",
     logo: firebase,
-    screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react, firebase],
     description:
       "Tienda online con carrito, pagos y panel de administración.",
@@ -59,7 +59,7 @@ export const projects = [
     slug: "slug-5",
     title: "WeatherApp (v2)",
     logo: react,
-    screenshot: "https://via.placeholder.com/350x120?text=WeatherApp",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react, firebase],
     description:
       "Aplicación para consultar el clima en tiempo real usando una API pública.",
@@ -72,7 +72,7 @@ export const projects = [
     slug: "slug-6",
     title: "Task Manager (Lite)",
     logo: react,
-    screenshot: "https://via.placeholder.com/350x120?text=Task+Manager",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react],
     description:
       "Gestor de tareas con autenticación y sincronización en la nube.",
@@ -85,7 +85,7 @@ export const projects = [
     slug: "slug-7",
     title: "Portfolio 2025 (Demo)",
     logo: react,
-    screenshot: "https://via.placeholder.com/350x120?text=Portfolio+2025",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react],
     description:
       "Sitio web personal para mostrar proyectos y experiencia profesional.",
@@ -98,7 +98,7 @@ export const projects = [
     slug: "slug-8",
     title: "E-commerce Demo (Admin)",
     logo: firebase,
-    screenshot: "https://via.placeholder.com/350x120?text=E-commerce+Demo",
+    screenshot: "https://picsum.photos/500/400",
     technologies: [react, firebase],
     description:
       "Tienda online con carrito, pagos y panel de administración.",
