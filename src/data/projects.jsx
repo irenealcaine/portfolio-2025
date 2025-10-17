@@ -1,16 +1,24 @@
+import todo from "../assets/check.svg"
+
 import react from "../assets/react.svg"
 import firebase from "../assets/firebase.svg"
 
 export const projects = [
   {
-    id: 1,
+    id: 10,
     slug: "slug-1",
-    title: "WeatherApp",
-    logo: react,
+    title: {
+      es: "Gestor de Tareas",
+      en: "Task Manager"
+    },
+    logo: todo,
     screenshot: "https://picsum.photos/500/400",
     technologies: [react, firebase],
     description:
-      "Aplicación para consultar el clima en tiempo real usando una API pública.",
+    {
+      es: "Gestor de Tareas",
+      en: "Task Manager"
+    },
     url: "https://weatherapp.example.com",
     github: "https://github.com/tu-usuario/weatherapp",
     color: "lime"

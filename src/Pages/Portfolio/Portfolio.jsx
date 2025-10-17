@@ -3,6 +3,8 @@ import Layout from "../../Components/Layout/Layout";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import "./Portfolio.css";
 import { projects } from "../../data/projects";
+import { useTranslation } from "react-i18next"
+
 
 
 // Obtener todas las tecnologías únicas
@@ -11,6 +13,7 @@ const allTechs = Array.from(
 );
 
 const PortfolioPage = () => {
+  const { t, i18n } = useTranslation();
   const [filter, setFilter] = useState("Todos");
 
   const filteredProjects =
@@ -18,9 +21,12 @@ const PortfolioPage = () => {
       ? projects
       : projects.filter((p) => p.technologies.includes(filter));
 
+  // mostrar en orden inverso al array original
+  const displayedProjects = filteredProjects.slice().reverse();
+
   return (
     <Layout>
-        <h2>Portfolio</h2>
+        <h2>{t('portfolio.home')}</h2>
         <div>
           <div>
             <button
@@ -51,8 +57,15 @@ const PortfolioPage = () => {
         </div>
         <div className="projects-container"
         >
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
+          {displayedProjects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              title={i18n.language === "es" ? project.title.es : project.title.en}
+              slug={project.slug}
+              technologies={project.technologies}
+              logo={project.logo}
+              color={project.color}
+            />
           ))}
         </div>
     </Layout>
