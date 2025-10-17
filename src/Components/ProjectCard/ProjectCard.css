@@ -3,7 +3,7 @@
 }
 
 .project-card {
-  border: 2px solid #eee;
+  border: 3px solid #eee;
   border-radius: 10px;
   padding: 1rem;
   width: 23%;
@@ -15,7 +15,7 @@
   transition: all 0.3s ease;
   overflow: hidden;
 
-  box-shadow: 0 0 10px var(--color), inset 0 0 10px var(--color);
+  box-shadow: 0 0 10px var(--color), inset 0 0 10px var(--color), 0 0 5px var(--color), inset 0 0 5px var(--color);
 
   &.pink {
     --color: var(--pink);
