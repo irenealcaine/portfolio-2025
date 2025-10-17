@@ -21,7 +21,7 @@ export const projects = [
       en: "Task Manager"
     },
     logo: todo,
-    screenshot: "https://picsum.photos/500/400",
+    screenshot: "https://picsum.photos/500/200",
     technologies: [react, firebase],
     description: {
       es: "Gestor de Tareas lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -39,7 +39,7 @@ export const projects = [
       en: "Weather App"
     },
     logo: weather,
-    screenshot: "https://picsum.photos/500/400",
+    screenshot: "https://picsum.photos/500/200",
     technologies: [firebase, tailwind],
     description: {
       es: "Aplicación del tiempo con información en tiempo real y previsiones para varios días.",
@@ -57,7 +57,7 @@ export const projects = [
       en: "Portfolio 2025"
     },
     logo: react,
-    screenshot: "https://picsum.photos/500/400",
+    screenshot: "https://picsum.photos/500/200",
     technologies: [react, bootstrap],
     description: {
       es: "Sitio web personal para mostrar proyectos y experiencia profesional.",
@@ -75,7 +75,7 @@ export const projects = [
       en: "E-commerce Demo"
     },
     logo: firebase,
-    screenshot: "https://picsum.photos/500/400",
+    screenshot: "https://picsum.photos/500/200",
     technologies: [react, firebase],
     description: {
       es: "Tienda online con carrito, pagos y panel de administración.",
@@ -93,7 +93,7 @@ export const projects = [
       en: "WeatherApp (v2)"
     },
     logo: react,
-    screenshot: "https://picsum.photos/500/400",
+    screenshot: "https://picsum.photos/500/200",
     technologies: [react, firebase],
     description: {
       es: "Aplicación para consultar el clima en tiempo real usando una API pública.",
