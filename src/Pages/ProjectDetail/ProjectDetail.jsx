@@ -26,7 +26,7 @@ const ProjectDetail = () => {
   return (
     <Layout>
       <div className="project-detail">
-        <BackLink to="/portfolio">{t("projects.backToPortfolio")}</BackLink>
+        <BackLink to="/portfolio" text={t("projects.backToPortfolio")} />
 
         <header className="project-detail__header">
           <img
