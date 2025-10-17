@@ -27,7 +27,9 @@
     "project3": {
       "title": "Proyecto 3",
       "description": "Esta es una descripción detallada del proyecto 3 con tecnologías de vanguardia."
-    }
+    },
+    "notFound": "Proyecto no encontrado.",
+    "backToPortfolio": "Volver al portfolio"
   },
   "portfolio": {
     "home": "Portafolio",

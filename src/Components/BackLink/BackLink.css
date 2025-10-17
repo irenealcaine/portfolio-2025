@@ -1,0 +1,26 @@
+.backlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color, #fff);
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background 150ms ease, transform 100ms ease;
+  margin-bottom: 1rem;
+}
+
+.backlink:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.backlink-icon {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.backlink-text {
+  font-size: 0.95rem;
+}

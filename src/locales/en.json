@@ -28,7 +28,9 @@
     "project3": {
       "title": "Project 3",
       "description": "This is a detailed description of project 3 with cutting-edge technologies."
-    }
+    },
+    "notFound": "Project not found.",
+    "backToPortfolio": "Back to portfolio"
   },
   "portfolio": {
     "home": "Portfolio",

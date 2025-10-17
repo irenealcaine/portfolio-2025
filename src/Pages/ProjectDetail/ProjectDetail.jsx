@@ -1,13 +1,13 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Layout from "../../Components/Layout/Layout";
 import { projects } from "../../data/projects";
-import { useTranslation } from "react-i18next"
-
+import { useTranslation } from "react-i18next";
+import BackLink from "../../Components/BackLink/BackLink"; // <-- nuevo import
 
 const ProjectDetail = () => {
-    const { t, i18n } = useTranslation();
-  
+  const { t, i18n } = useTranslation();
+
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
@@ -15,8 +15,8 @@ const ProjectDetail = () => {
     return (
       <Layout>
         <div>
-          <h2>Proyecto no encontrado</h2>
-          <Link to="/portfolio">Volver al portfolio</Link>
+          <h2>{t("projects.notFound")}</h2>
+          <BackLink to="/portfolio">{t("projects.backToPortfolio")}</BackLink>
         </div>
       </Layout>
     );
@@ -25,9 +25,8 @@ const ProjectDetail = () => {
   return (
     <Layout>
       <div style={{ maxWidth: 600, margin: "2rem auto" }}>
-        <Link to="/portfolio" style={{ marginBottom: "1rem", display: "inline-block" }}>
-          ← Volver al portfolio
-        </Link>
+        <BackLink to="/portfolio">{t("projects.backToPortfolio")}</BackLink>
+
         <img src={project.logo} alt={`${project.title} logo`} style={{ width: 64, height: 64 }} />
         <h2>{i18n.language === "es" ? project.title.es : project.title.en}</h2>
         <img src={project.screenshot} alt={`${project.title} screenshot`} style={{ width: "100%", borderRadius: 8, margin: "1rem 0" }} />

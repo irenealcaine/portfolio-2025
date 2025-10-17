@@ -6,7 +6,7 @@ import firebase from "../assets/firebase.svg"
 export const projects = [
   {
     id: 10,
-    slug: "slug-1",
+    slug: "todo-app",
     title: {
       es: "Gestor de Tareas",
       en: "Task Manager"
