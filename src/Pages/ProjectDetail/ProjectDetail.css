@@ -1,0 +1,132 @@
+.project-detail {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--color, #fff);
+}
+
+/* Header: logo + title */
+.project-detail__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-detail__logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  padding: 6px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  flex-shrink: 0;
+}
+
+.project-detail__title {
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1.1;
+  color: var(--color, #fff);
+}
+
+/* Screenshot */
+.project-detail__screenshot {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45), 0 0 30px rgba(0,0,0,0.15) inset;
+}
+
+/* Description */
+.project-detail__description {
+  font-size: 1rem;
+  color: var(--color-rgba, rgba(255,255,255,0.85));
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+/* Techs */
+.project-detail__techs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.project-detail__tech {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Actions: url + github */
+.project-detail__actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 120ms ease, background 120ms ease, box-shadow 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Primary (visit site) */
+.btn--primary {
+  background: linear-gradient(90deg, var(--color, #fff) 0%, rgba(255,255,255,0.85) 100%);
+  color: var(--bg, #000);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Ghost (github) */
+.btn--ghost {
+  background: transparent;
+  color: var(--color, #fff);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Small helper for backlink spacing if using BackLink component */
+.project-detail .backlink {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .project-detail__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-detail__logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .project-detail__title {
+    font-size: 1.25rem;
+  }
+}
