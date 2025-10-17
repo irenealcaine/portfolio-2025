@@ -4,6 +4,7 @@ import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import "./Portfolio.css";
 import { projects } from "../../data/projects";
 import { useTranslation } from "react-i18next"
+import Button from "../../Components/Button/Button";
 
 
 
@@ -29,29 +30,28 @@ const PortfolioPage = () => {
         <h2>{t('portfolio.home')}</h2>
         <div>
           <div>
-            <button
+            <Button
+              type="button"
+              variant={filter === "Todos" ? "primary" : "ghost"}
+              size="sm"
               onClick={() => setFilter("Todos")}
-              style={{
-                marginRight: "0.5rem",
-                fontWeight:
-                  filter === "Todos" ? "bold" : "normal",
-              }}
+              style={{ marginRight: "0.5rem" }}
             >
-              Todos
-            </button>
+              {t?.('portfolio.all') || 'Todos'}
+            </Button>
 
             {allTechs.map((tech) => (
-              <button
+              <Button
                 key={tech}
+                type="button"
+                variant={filter === tech ? "primary" : "ghost"}
+                size="sm"
                 onClick={() => setFilter(tech)}
-                style={{
-                  marginRight: "0.5rem",
-                  fontWeight:
-                    filter === tech ? "bold" : "normal",
-                }}
+                style={{ marginRight: "0.5rem", display: "inline-flex", alignItems: "center" }}
               >
-                <img src={tech} alt={tech} style={{width: '16px', height: '16px', verticalAlign: 'middle', marginRight: '4px'}} />
-              </button>
+                <img src={tech} alt={tech} style={{width: 16, height: 16, verticalAlign: 'middle', marginRight: 6}} />
+                {/* puedes añadir texto aquí si quieres */}
+              </Button>
             ))}
           </div>
         </div>

@@ -4,6 +4,7 @@ import Layout from "../../Components/Layout/Layout";
 import { projects } from "../../data/projects";
 import { useTranslation } from "react-i18next";
 import BackLink from "../../Components/BackLink/BackLink";
+import Button from "../../Components/Button/Button"; // <-- agregado
 import "./ProjectDetail.css";
 
 const ProjectDetail = () => {
@@ -60,14 +61,14 @@ const ProjectDetail = () => {
 
         <div className="project-detail__actions">
           {project.url && (
-            <a className="btn btn--primary" href={project.url} target="_blank" rel="noopener noreferrer">
+            <Button href={project.url} target="_blank" variant="primary">
               {t("projects.visitSite") || "Visitar"}
-            </a>
+            </Button>
           )}
           {project.github && (
-            <a className="btn btn--ghost" href={project.github} target="_blank" rel="noopener noreferrer">
+            <Button href={project.github} target="_blank" variant="ghost">
               GitHub
-            </a>
+            </Button>
           )}
         </div>
       </div>
