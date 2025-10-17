@@ -29,13 +29,12 @@ const PortfolioPage = () => {
     <Layout>
         <h2>{t('portfolio.home')}</h2>
         <div>
-          <div>
+          <div className="buttons-container">
             <Button
               type="button"
               variant={filter === "Todos" ? "primary" : "ghost"}
               size="sm"
               onClick={() => setFilter("Todos")}
-              style={{ marginRight: "0.5rem" }}
             >
               {t?.('portfolio.all') || 'Todos'}
             </Button>
@@ -47,10 +46,8 @@ const PortfolioPage = () => {
                 variant={filter === tech ? "primary" : "ghost"}
                 size="sm"
                 onClick={() => setFilter(tech)}
-                style={{ marginRight: "0.5rem", display: "inline-flex", alignItems: "center" }}
-              >
-                <img src={tech} alt={tech} style={{width: 16, height: 16, verticalAlign: 'middle', marginRight: 6}} />
-                {/* puedes añadir texto aquí si quieres */}
+               >
+                <img src={tech} alt={tech} style={{width: 16, height: 16}} />
               </Button>
             ))}
           </div>

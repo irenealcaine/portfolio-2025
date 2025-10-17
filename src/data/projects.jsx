@@ -29,7 +29,7 @@ export const projects = [
     },
     url: "https://weatherapp.example.com",
     github: "https://github.com/tu-usuario/weatherapp",
-    color: "lime"
+    color: "pink"
   },
   {
     id: 20,
@@ -47,7 +47,7 @@ export const projects = [
     },
     url: "https://tasks.example.com",
     github: "https://github.com/tu-usuario/task-manager",
-    color: "dark-blue"
+    color: "yellow"
   },
   {
     id: 3,
@@ -173,6 +173,6 @@ export const projects = [
     },
     url: "https://ecommerce-admin.example.com",
     github: "https://github.com/tu-usuario/ecommerce-admin",
-    color: "lime"
+    color: "light-blue"
   },
 ];

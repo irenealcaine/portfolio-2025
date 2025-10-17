@@ -33,6 +33,7 @@
   },
   "portfolio": {
     "home": "Portafolio",
-    "description": "Todos mis proyectos y webs"
+    "description": "Todos mis proyectos y webs",
+    "all": "Todos"
   }
 }

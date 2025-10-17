@@ -34,7 +34,8 @@
   },
   "portfolio": {
     "home": "Portfolio",
-    "description": "All my projects and websites"
+    "description": "All my projects and websites",
+    "all": "All"
   },
   "footer": {
     "copyright": "© 2025 Irene Alcaine. All rights reserved."
