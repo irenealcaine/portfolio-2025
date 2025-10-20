@@ -13,7 +13,7 @@ const AboutPage = () => {
 
       <div className='container'>
         <div className='contact'>
-          <h2>Contacto</h2>
+          <h2 className="about-title">Contacto</h2>
           {socialMedia.map((social) => (
             <div key={social.name} className={`social-media ${social.color}`}>
               <a href={social.href} target="_blank" rel="noopener noreferrer">
@@ -25,7 +25,7 @@ const AboutPage = () => {
 
         <div className='experience'>
           <div className='work'>
-            <h2>Experiencia</h2>
+            <h2 className="about-title">Experiencia</h2>
             <p>A pesar de que mi experiencia laboral no está directamente relacionada con la programación, he trabajado en varios sitios que han perfeccionado mis habilidades en atención al cliente, trabajo en equipo y bajo presión y organización del tiempo.</p>
             <ul className='timeline'>
               {experience.slice().reverse().map((job) => (
@@ -44,7 +44,7 @@ const AboutPage = () => {
             </ul>
           </div>
           <div className='education'>
-            <h2>Formación</h2>
+            <h2 className="about-title">Formación</h2>
             <p>Desde principios de 2022, he estado saciando mi curiosidad y aprendiendo por mi cuenta. Además, he realizado algunos cursos de frontend y publicación de páginas web.</p>
             <ul className='timeline'>
               {education.slice().reverse().map((edu) => (

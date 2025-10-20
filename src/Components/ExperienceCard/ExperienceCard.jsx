@@ -6,7 +6,7 @@ const ExperienceCard = ({ index, id, title, company, ubication, date, descriptio
             } ${color}`}>
             <div className="marker"></div>
             <div className="timeline-content">
-                <h3>{title}</h3>
+                <h3 className="timeline-title">{title}</h3>
                 <p className="company-ubication"><span>{company}</span> | {ubication}</p>
                 <ul className="job-description">
                     {description.map((point, index) => (
