@@ -2,6 +2,7 @@
 export const experience = [
     {
         id: "1",
+        color: "orange",
         es: {
             title: "Atención al cliente",
             company: "Varias empresas",
@@ -27,6 +28,7 @@ export const experience = [
     },
     {
         id: "2",
+        color: "light-blue",
         es: {
             title: "Programadora Junior",
             company: "Better Consultants",

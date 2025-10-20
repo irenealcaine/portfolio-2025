@@ -1,6 +1,7 @@
 export const education = [
   {
     id: "1",
+    color: "green",
     es: {
       title: "Grado en ingeniería mecánica",
       company: "Centro politécnico superior (CPS)",
@@ -26,6 +27,7 @@ export const education = [
   },
   {
     id: "2",
+    color: "dark-blue",
     es: {
       title: "Programación y diseño web front-end",
       company: "Escuela de organización industrial (EOI)",
@@ -51,6 +53,7 @@ export const education = [
   },
   {
     id: "3",
+    color: "red",
     es: {
       title: "Confección y publicación de páginas web",
       company: "Ayuntamiento de Casinos",

@@ -33,6 +33,7 @@ const AboutPage = () => {
                   index={experience.indexOf(job)}
                   key={job.id}
                   id={job.id}
+                  color={job.color}
                   title={job.es.title}
                   company={job.es.company}
                   ubication={job.es.ubication}
@@ -51,6 +52,7 @@ const AboutPage = () => {
                   index={education.indexOf(edu)}
                   key={edu.id}
                   id={edu.id}
+                  color={edu.color}
                   title={edu.es.title}
                   company={edu.es.company}
                   ubication={edu.es.ubication}
