@@ -17,6 +17,10 @@ const PortfolioPage = () => {
   const { t, i18n } = useTranslation();
   const [filter, setFilter] = useState("Todos");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const filteredProjects =
     filter === "Todos"
       ? projects
