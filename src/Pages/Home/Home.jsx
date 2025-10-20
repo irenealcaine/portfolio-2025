@@ -7,6 +7,7 @@ import LanguageToggle from "../../Components/LanguageToggle/LanguageToggle.jsx"
 import react from "../../assets/react.svg"
 import firebase from "../../assets/firebase.svg"
 import tailwind from "../../assets/tailwind.svg"
+import { posts } from "../../data/blogPosts.jsx"
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -51,7 +52,11 @@ const HomePage = () => {
       </NeonCard>
 
       <NeonCard id="blog" color="green">
-        <p>{t('common.blog')}</p>
+        <h2>{t('common.blog')}</h2>
+        {posts.map((post) => (
+          <a href={`https://www.blog.netlify.app/post/${post.slug}`} key={post.slug}>{post.title}</a>
+        ))}
+        <a href={`https://www.blog.netlify.app/`}>/..</a>
       </NeonCard>
 
     </main>

@@ -49,6 +49,7 @@ ol, ul {
 a{
   text-decoration: none;
   color: inherit;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 img, svg, video{
   display:block;
