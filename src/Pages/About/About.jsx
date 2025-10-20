@@ -1,3 +1,4 @@
+import ExperienceCard from '../../Components/ExperienceCard/ExperienceCard'
 import Layout from '../../Components/Layout/Layout'
 import { education } from '../../data/education'
 import { experience } from '../../data/experience'
@@ -26,34 +27,36 @@ const AboutPage = () => {
           <div className='work'>
             <h2>Experiencia</h2>
             <p>A pesar de que mi experiencia laboral no está directamente relacionada con la programación, he trabajado en varios sitios que han perfeccionado mis habilidades en atención al cliente, trabajo en equipo y bajo presión y organización del tiempo.</p>
-            <ul>
+            <ul className='timeline'>
               {experience.slice().reverse().map((job) => (
-                <li key={job.id} className="job">
-                  <h3>{job.es.title} - {job.es.company}</h3>
-                  <span className="ubication-date">{job.es.ubication} | {job.es.date}</span>
-                  <ul className="job-description">
-                    {job.es.description.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
-                </li>
+                <ExperienceCard
+                  index={experience.indexOf(job)}
+                  key={job.id}
+                  id={job.id}
+                  title={job.es.title}
+                  company={job.es.company}
+                  ubication={job.es.ubication}
+                  date={job.es.date}
+                  description={job.es.description}
+                />
               ))}
             </ul>
           </div>
           <div className='education'>
             <h2>Formación</h2>
             <p>Desde principios de 2022, he estado saciando mi curiosidad y aprendiendo por mi cuenta. Además, he realizado algunos cursos de frontend y publicación de páginas web.</p>
-            <ul>
+            <ul className='timeline'>
               {education.slice().reverse().map((edu) => (
-                <li key={edu.id} className="job">
-                  <h3>{edu.es.title} - {edu.es.company}</h3>
-                  <span className="ubication-date">{edu.es.ubication} | {edu.es.date}</span>
-                  <ul className="job-description">
-                    {edu.es.description.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
-                </li>
+                <ExperienceCard
+                  index={education.indexOf(edu)}
+                  key={edu.id}
+                  id={edu.id}
+                  title={edu.es.title}
+                  company={edu.es.company}
+                  ubication={edu.es.ubication}
+                  date={edu.es.date}
+                  description={edu.es.description}
+                />
               ))}
             </ul>
           </div>
