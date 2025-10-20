@@ -1,4 +1,4 @@
-h2{
+h2 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -23,5 +23,16 @@ h2{
         height: 100%;
         background: linear-gradient(transparent 0%, var(--pink), transparent 90%);
         z-index: 1;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        padding-left: 10px;
+
+        &:before {
+            left: 13px;
+        }
     }
 }

@@ -98,3 +98,31 @@
         font-size: 1.1rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 30px;
+
+        & .marker {
+            top: 18px
+        }
+
+        &.timeline-block-right {
+            float: none;
+
+            & .marker {
+                margin-left: -20px;
+            }
+        }
+
+        &.timeline-block-left {
+            float: none;
+            direction: ltr;
+
+            & .marker {
+                margin-left: -20px;
+            }
+        }
+    }
+}
