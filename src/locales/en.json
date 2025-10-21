@@ -2,7 +2,8 @@
   "common": {
     "developer": "Developer",
     "projects": "Portfolio",
-    "blog": "Blog"
+    "blog": "Blog",
+    "blogDescription": "Read my latest blog posts about web development and technology."
   },
   "home": {
     "name": "Irene Alcaine",

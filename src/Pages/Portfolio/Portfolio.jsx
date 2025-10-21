@@ -31,7 +31,7 @@ const PortfolioPage = () => {
 
   return (
     <Layout>
-        <h2>{t('portfolio.home')}</h2>
+        <h1>{t('portfolio.home')}</h1>
         <div>
           <div className="buttons-container">
             <Button
