@@ -6,6 +6,8 @@ import netflix from "../assets/netflix.svg"
 import sofa from "../assets/sofa.svg"
 import monster from "../assets/monster.png"
 import meal from "../assets/meal.png"
+import list from "../assets/list.png"
+import spiral from "../assets/spiral.svg"
 import resources from "../assets/code.svg"
 
 import react from "../assets/react.svg"
@@ -16,7 +18,7 @@ import supabase from "../assets/supabase.svg"
 import bootstrap from "../assets/bootstrap.svg"
 import materialui from "../assets/materialui.svg"
 import tailwind from "../assets/tailwind.svg"
-
+import sass from "../assets/sass.png"
 
 export const projects = [
   {
@@ -162,5 +164,41 @@ export const projects = [
     url: "https://meal-wiki.netlify.app/",
     github: "https://github.com/irenealcaine/meal-wiki",
     color: "lime"
+  },
+  {
+    id: 90,
+    slug: "shopping-list",
+    title: {
+      es: "Lista de la compra",
+      en: "Shopping List"
+    },
+    logo: list,
+    screenshot: "https://picsum.photos/500/400",
+    technologies: [react, sass, firebase],
+    description: {
+      es: "Aplicación de lista de la compra donde tienes una serie de productos y al marcarlos se añaden a tu lista de la compra, además pueedes marcarlos como comprados o eliminarlos. Es necesario registro para guardar tu lista en la nube y acceder a ella desde cualquier dispositivo.",
+      en: "Shopping list application where you have a series of products and by marking them they are added to your shopping list, you can also mark them as purchased or delete them. Registration is required to save your list in the cloud and access it from any device."
+    },
+    url: "https://lista-compra-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/lista-de-la-compra",
+    color: "green"
+  },
+  {
+    id: 90,
+    slug: "template",
+    title: {
+      es: "Plantilla",
+      en: "Template"
+    },
+    logo: spiral,
+    screenshot: "https://picsum.photos/500/400",
+    technologies: [react],
+    description: {
+      es: "Plantilla lista para usar para tus proyectos de React con CSS puro. Tiene varias opciones para el header, footer y navbar, así como diversos componentes, todo ello con colores vivos, modo claro/oscuro y completamente responsivo, además de rutas ya preparadas. Solo tienes que clonar el repositorio y empezar a crear tu proyecto.",
+      en: "Template ready to use for your React projects with pure CSS. It has several options for the header, footer and navbar, as well as various components, all with vibrant colors, light/dark mode and full responsive, as well as pre-prepared routes. You just have to clone the repository and start creating your project."
+    },
+    url: "https://template-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/template-navbar",
+    color: "pink"
   }
 ];
