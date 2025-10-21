@@ -19,6 +19,7 @@ import bootstrap from "../assets/bootstrap.svg"
 import materialui from "../assets/materialui.svg"
 import tailwind from "../assets/tailwind.svg"
 import sass from "../assets/sass.png"
+import heroui from "../assets/hero-ui.png"
 
 export const projects = [
   {
@@ -184,7 +185,7 @@ export const projects = [
     color: "green"
   },
   {
-    id: 90,
+    id: 100,
     slug: "template",
     title: {
       es: "Plantilla",
@@ -193,6 +194,24 @@ export const projects = [
     logo: spiral,
     screenshot: "https://picsum.photos/500/400",
     technologies: [react],
+    description: {
+      es: "Plantilla lista para usar para tus proyectos de React con CSS puro. Tiene varias opciones para el header, footer y navbar, así como diversos componentes, todo ello con colores vivos, modo claro/oscuro y completamente responsivo, además de rutas ya preparadas. Solo tienes que clonar el repositorio y empezar a crear tu proyecto.",
+      en: "Template ready to use for your React projects with pure CSS. It has several options for the header, footer and navbar, as well as various components, all with vibrant colors, light/dark mode and full responsive, as well as pre-prepared routes. You just have to clone the repository and start creating your project."
+    },
+    url: "https://template-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/template-navbar",
+    color: "pink"
+  },
+  {
+    id: 110,
+    slug: "dev-resources",
+    title: {
+      es: "Recursos para devs",
+      en: "Dev Resources"
+    },
+    logo: resources,
+    screenshot: "https://picsum.photos/500/400",
+    technologies: [react, heroui, supabase],
     description: {
       es: "Plantilla lista para usar para tus proyectos de React con CSS puro. Tiene varias opciones para el header, footer y navbar, así como diversos componentes, todo ello con colores vivos, modo claro/oscuro y completamente responsivo, además de rutas ya preparadas. Solo tienes que clonar el repositorio y empezar a crear tu proyecto.",
       en: "Template ready to use for your React projects with pure CSS. It has several options for the header, footer and navbar, as well as various components, all with vibrant colors, light/dark mode and full responsive, as well as pre-prepared routes. You just have to clone the repository and start creating your project."
