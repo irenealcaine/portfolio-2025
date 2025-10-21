@@ -1,5 +1,8 @@
 import todo from "../assets/check.svg"
 import weather from "../assets/sun.svg"
+import shop from "../assets/shop.png"
+import coin from "../assets/bitcoin.svg"
+import netflix from "../assets/netflix.svg"
 import resources from "../assets/code.svg"
 
 import react from "../assets/react.svg"
@@ -15,93 +18,93 @@ import tailwind from "../assets/tailwind.svg"
 export const projects = [
   {
     id: 10,
-    slug: "todo-app",
+    slug: "todododo",
     title: {
-      es: "Gestor de Tareas",
-      en: "Task Manager"
+      es: "Todododo",
+      en: "Todododo"
     },
     logo: todo,
     screenshot: "https://picsum.photos/500/200",
-    technologies: [react, firebase],
+    technologies: [react, tailwind, firebase],
     description: {
-      es: "Gestor de Tareas lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      en: "Task Manager app to manage your daily tasks with cloud sync and authentication."
+      es: "Web de lista de tareas pendientes, cada tarea está asignada a una categoría y se muestran con colores diferentes. Cada tarea se puede editar, marcar como realizada o borrar. Los datos se almacenan en localStorage si entras como invitado, pero puedes registrate para accedes a tus tareas en otros dispositivos.",
+      en: "App for a to-do list, where each task is assigned to a category and displayed with different colors. Each task can be edited, marked as done, or deleted. The data is stored in localStorage if you enter as a guest, but you can register if you want to see your tasks in other devices."
     },
-    url: "https://weatherapp.example.com",
-    github: "https://github.com/tu-usuario/weatherapp",
+    url: "https://todododo-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/todododo/",
     color: "pink"
   },
   {
     id: 20,
-    slug: "slug-2",
+    slug: "weather-app",
     title: {
-      es: "Aplicación del Tiempo",
-      en: "Weather App"
+      es: "Aplicación del tiempo",
+      en: "Weather app"
     },
     logo: weather,
     screenshot: "https://picsum.photos/500/200",
-    technologies: [firebase, tailwind],
+    technologies: [react, tailwind],
     description: {
-      es: "Aplicación del tiempo con información en tiempo real y previsiones para varios días.",
-      en: "Weather application providing real-time data and multi-day forecasts."
+      es: "Web de pronóstico del tiempo que proporciona información detallada sobre el clima actual y los pronósticos para los próximos días utilizando la API de Open Meteo. Muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 24 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, velocidad del viento y probabilidad de lluvia para cada día.",
+      en: "Weather forecast website that offers detailed information about the current weather and forecasts for the upcoming days using the Open Meteo API. It displays the current date and time, as well as temperature, humidity, and wind speed. Additionally, it presents a graph for the next 24 hours showing temperature and rainfall probability, along with a seven-day view providing information about temperature, wind speed, and rain probability for each day."
     },
-    url: "https://tasks.example.com",
-    github: "https://github.com/tu-usuario/task-manager",
+    url: "https://www.eltiempodeirene.netlify.app",
+    github: "https://github.com/irenealcaine/eltiempo",
     color: "yellow"
   },
   {
-    id: 3,
-    slug: "slug-3",
+    id: 30,
+    slug: "shop-catalog",
     title: {
-      es: "Portfolio 2025",
-      en: "Portfolio 2025"
+      es: "Catálogo de tienda",
+      en: "Shop catalog"
     },
-    logo: react,
+    logo: shop,
     screenshot: "https://picsum.photos/500/200",
     technologies: [react, bootstrap],
     description: {
-      es: "Sitio web personal para mostrar proyectos y experiencia profesional.",
-      en: "Personal website to showcase projects and professional experience."
+      es: "Catálogo sencillo de una tienda ficticia. Con barra de búsqueda, ordenación por precio, número de ventas y opiniones de usuarios y filtros de stock, nota de usuarios y categorías. Posibilidad de añadir al carrito, el cual tiene una página propia donde gestiona los productos añadidos.",
+      en: "Simple catalog of a fictional store. With a search bar, sorting by price, number of sales, and user reviews, as well as filters for stock availability, user ratings, and categories. The option to add items to the shopping cart, which has its own page for managing the added products."
     },
-    url: "https://tu-portfolio.example.com",
-    github: "https://github.com/tu-usuario/portfolio-2025",
-    color: "light-blue"
+    url: "https://ecommerce-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/commerce-react/",
+    color: "purple"
   },
   {
-    id: 4,
-    slug: "slug-4",
+    id: 40,
+    slug: "crypto-tracker",
     title: {
-      es: "Demo E-commerce",
-      en: "E-commerce Demo"
+      es: "Seguimiento de cryptos",
+      en: "Crypto tracker"
     },
-    logo: firebase,
+    logo: coin,
     screenshot: "https://picsum.photos/500/200",
-    technologies: [react, firebase],
+    technologies: [react, materialui],
     description: {
-      es: "Tienda online con carrito, pagos y panel de administración.",
-      en: "Online store demo with cart, payments and admin panel."
+      es: "Información actualizada de las criptomonedas más populares utilizando la API de Coingecko. Precios y gráficas de variación de precios del último año de 100 criptomonedas, así como el precio y market cap en tiempo real, tanto en euros como en dólares.",
+      en: "Up-to-date information on the most popular cryptocurrencies using the Coingecko API. Prices and price variation charts from the last year for 100 cryptocurrencies, as well as real-time price and market cap in both euros and dollars."
     },
-    url: "https://ecommerce.example.com",
-    github: "https://github.com/tu-usuario/ecommerce-demo",
+    url: "https://cryptotracker-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/cryptotracker",
     color: "orange"
   },
   {
-    id: 5,
-    slug: "slug-5",
+    id: 50,
+    slug: "netfliclon",
     title: {
-      es: "WeatherApp (v2)",
-      en: "WeatherApp (v2)"
+      es: "Clon de netflix",
+      en: "Netflix Clone"
     },
-    logo: react,
+    logo: netflix,
     screenshot: "https://picsum.photos/500/200",
-    technologies: [react, firebase],
+    technologies: [react, tailwind, firebase],
     description: {
-      es: "Aplicación para consultar el clima en tiempo real usando una API pública.",
-      en: "App to check real-time weather using a public API."
+      es: "Web que imita la de Netflix usando la API de TMDB. En la página principal se pueden ver los detalles de una de las películas de moda, así como listas de las novedades, las películas populares, las películas en tendencia, las mejor valoradas y documentales. Cada película tiene su propia página con información de la película, como una descripción, la fecha de estreno, la duración y la nota. También se muestran los actores que participan y películas similares. Cada actor tiene también su propia página donde se muestra la fecha de nacimiento y la de fallecimiento si la hubiera, lugar de nacimiento, descripción de su carrera y sus participaciones en películas.",
+      en: "A website that mimics Netflix's layout using the TMDB API. On the main page, you can view details about a trending movie, as well as lists of new releases, popular films, trending movies, top-rated movies, and documentaries. Each movie has its own page with film information such as a description, release date, duration, and rating. The actors involved and similar movies are also displayed. Each actor also has their own page showcasing their birthdate, date of passing if applicable, place of birth, career description, and filmography."
     },
-    url: "https://weatherapp-v2.example.com",
-    github: "https://github.com/tu-usuario/weatherapp-v2",
-    color: "yellow"
+    url: "https://netfliclon-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/netfliclon",
+    color: "red"
   },
   {
     id: 6,
