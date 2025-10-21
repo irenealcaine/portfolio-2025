@@ -16,20 +16,20 @@ export const mainProjects = [
     icon: spiral,
     tech: [react],
     color: "yellow",
-    href: "https://www.google.es"
+    href: "https://template-irene.netlify.app/"
   },
   {
     id: "project2",
     icon: resources,
     tech: [react, heroui, supabase],
     color: "purple",
-    href: "https://www.google.es"
+    href: "https://dev-resources-irene.netlify.app"
   },
   {
     id: "project3",
     icon: list,
     tech: [react, sass, firebase],
     color: "light-blue",
-    href: "https://www.google.es"
+    href: "https://lista-compra-irene.netlify.app/"
   },
 ]

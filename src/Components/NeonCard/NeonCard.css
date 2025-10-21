@@ -6,7 +6,7 @@
   --dark-blue: rgb(0, 30, 255);
   --red: rgb(255, 0, 0);
   --light-blue: rgb(0, 229, 255);
-  --purple: rgb(85, 0, 124);
+  --purple: rgb(139, 0, 203);
   --green: rgb(0, 128, 11);
   --lime: rgb(119, 204, 0);
 
@@ -31,6 +31,10 @@
   background-color: transparent;
   box-shadow: 0 0 20px var(--color), inset 0 0 20px var(--color);
   transition: all .2s ease;
+
+  & h1, & h2, & h3{
+    text-shadow: 0 0 5px var(--color), 0 0 7px var(--color);
+  }
 
   &:hover{
     box-shadow: 0 0 20px var(--color), inset 0 0 20px var(--color), 0 0 5px var(--color), inset 0 0 5px var(--color);

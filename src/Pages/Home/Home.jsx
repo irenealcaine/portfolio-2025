@@ -55,9 +55,9 @@ const HomePage = () => {
         <h2>{t('common.blog')}</h2>
         <p>{t('common.blogDescription')}</p>
         {posts.map((post) => (
-          <a href={`https://www.blogdeirene.netlify.app/${post.slug}`} target="_blank" rel="noopener noreferrer" key={post.slug}>/{post.slug}</a>
+          <a href={`https://blogdeirene.netlify.app/${post.slug}`} target="_blank" rel="noopener noreferrer" key={post.slug}>/{post.slug}</a>
         ))}
-        <a href={`https://www.blogdeirene.netlify.app/`} target="_blank" rel="noopener noreferrer">/..</a>
+        <a href={`https://blogdeirene.netlify.app`} target="_blank" rel="noopener noreferrer">/..</a>
       </NeonCard>
 
     </main>
