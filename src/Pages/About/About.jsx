@@ -14,13 +14,16 @@ const AboutPage = () => {
       <div className='container'>
         <div className='contact'>
           <h2 className="about-title">Contacto</h2>
-          {socialMedia.map((social) => (
+          <div className='social-media-container'>
+            {socialMedia.map((social) => (
             <div key={social.name} className={`social-media ${social.color}`}>
               <a href={social.href} target="_blank" rel="noopener noreferrer">
-                <span>{social.text}</span>
+                <span>{social.icon}</span>{social.text} 
               </a>
             </div>
           ))}
+          </div>
+          
         </div>
 
         <div className='experience'>

@@ -6,6 +6,41 @@
     text-shadow: 0 0 10px var(--pink);
 }
 
+.social-media-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    & .social-media {
+        padding: 4px;
+        border-radius: 8px;
+        text-shadow: 0 0 10px transparent;
+        transition: all 0.2s;
+        display: flex;
+
+        &:hover {
+            text-shadow: 0 0 5px var(--pink),0 0 10px var(--pink);
+            text-decoration: underline;
+        }
+
+        & a{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+
+            & span{
+                font-size: 24px;
+                filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
+            }
+        }
+    }
+}
+
 .timeline {
     width: 100%;
     padding: 20px 0;
@@ -34,5 +69,11 @@
         &:before {
             left: 13px;
         }
+    }
+
+    .social-media-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
     }
 }

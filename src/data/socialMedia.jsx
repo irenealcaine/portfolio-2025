@@ -9,13 +9,7 @@ export const socialMedia = [
     icon: <FiMail />,
     color: "red"
   },
-  {
-    id: "phone",
-    text: "629882129",
-    href: "https://api.whatsapp.com/send?phone=629882129&text=Hola",
-    icon: <IoLogoWhatsapp />,
-    color: "green"
-  },
+
   {
     id: "github",
     text: "github.com/irenealcaine",
@@ -29,5 +23,12 @@ export const socialMedia = [
     href: "https://www.linkedin.com/in/irenealcaine/",
     icon: <FiLinkedin />,
     color: "light-blue"
+  },  
+  {
+    id: "phone",
+    text: "629882129",
+    href: "https://api.whatsapp.com/send?phone=629882129&text=Hola",
+    icon: <IoLogoWhatsapp />,
+    color: "green"
   },
 ];
