@@ -89,14 +89,9 @@
 
   }
 
-  & #project1, & #project2, & #project3{
+  & #project1, & #project2, & #project3, & #blog{
     position: relative;
     overflow: hidden;
-
-    & h2, & p{
-      position: relative;
-      z-index: 1;
-    }
 
     & .icon{
       position: absolute;

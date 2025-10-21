@@ -7,6 +7,7 @@ import LanguageToggle from "../../Components/LanguageToggle/LanguageToggle.jsx"
 import react from "../../assets/react.svg"
 import firebase from "../../assets/firebase.svg"
 import tailwind from "../../assets/tailwind.svg"
+import blog from "../../assets/blog.svg"
 import { posts } from "../../data/blogPosts.jsx"
 
 const HomePage = () => {
@@ -58,6 +59,7 @@ const HomePage = () => {
           <a href={`https://blogdeirene.netlify.app/${post.slug}`} target="_blank" rel="noopener noreferrer" key={post.slug}>/{post.slug}</a>
         ))}
         <a href={`https://blogdeirene.netlify.app`} target="_blank" rel="noopener noreferrer">/..</a>
+        <img className="blog-icon icon" src={blog} alt="Blog icon" />
       </NeonCard>
 
     </main>
