@@ -3,6 +3,9 @@ import weather from "../assets/sun.svg"
 import shop from "../assets/shop.png"
 import coin from "../assets/bitcoin.svg"
 import netflix from "../assets/netflix.svg"
+import sofa from "../assets/sofa.svg"
+import monster from "../assets/monster.png"
+import meal from "../assets/meal.png"
 import resources from "../assets/code.svg"
 
 import react from "../assets/react.svg"
@@ -107,75 +110,57 @@ export const projects = [
     color: "red"
   },
   {
-    id: 6,
-    slug: "slug-6",
+    id: 60,
+    slug: "the-corner-of-unthinking",
     title: {
-      es: "Gestor de Tareas (Lite)",
-      en: "Task Manager (Lite)"
+      es: "El rincón de no pensar",
+      en: "The Corner of Unthinking"
     },
-    logo: react,
+    logo: sofa,
+    screenshot: "https://picsum.photos/500/400",
+    technologies: [react, tailwind],
+    description: {
+      es: "Web donde se encuentran proyectos pequeños pero llenos de encanto, todos ellos hechos con React y Tailwind. Aquí, presento una colección de creaciones modestas que, aunque demasiado pequeñas para tener su propio sitio web, merecen ser apreciadas y compartidas.",
+      en: "A website where you'll find small yet charming projects, all made with React and Tailwind. Here, I present a collection of modest creations that, although too small to have their own website, deserve to be appreciated and shared."
+    },
+    url: "https://https://elrincondenopensar.netlify.app/",
+    github: "https://github.com/irenealcaine/el-rincon-de-no-pensar",
+    color: "dark-blue"
+  },
+  {
+    id: 70,
+    slug: "monster-hunter-database",
+    title: {
+      es: "Base de datos de Monster Hunter",
+      en: "Monster Hunter Database"
+    },
+    logo: monster,
     screenshot: "https://picsum.photos/500/400",
     technologies: [react],
     description: {
-      es: "Versión ligera del gestor de tareas, pensada para ser rápida y minimalista.",
-      en: "Lightweight task manager focused on speed and simplicity."
+      es: "Web con multitud de datos sobre Monster Hunter, informacion sobre los monstruos, armas, armaduras, localizaciones, habilidades, objetos, estados y su relación entre ellos. Utilizando la api de AP de Monster Hunter World.",
+      en: "Website with a wealth of data on Monster Hunter, information about monsters, weapons, armor, locations, skills, items, ailments, and their relationships with each other. Using the API of Monster Hunter World."
     },
-    url: "https://tasks-lite.example.com",
-    github: "https://github.com/tu-usuario/task-manager-lite",
-    color: "pink"
-  },
-  {
-    id: 7,
-    slug: "slug-7",
-    title: {
-      es: "Portfolio 2025 (Demo)",
-      en: "Portfolio 2025 (Demo)"
-    },
-    logo: react,
-    screenshot: "https://picsum.photos/500/400",
-    technologies: [react, materialui],
-    description: {
-      es: "Versión demo del portfolio con ejemplos y plantillas.",
-      en: "Demo version of the portfolio with examples and templates."
-    },
-    url: "https://portfolio-demo.example.com",
-    github: "https://github.com/tu-usuario/portfolio-2025-demo",
-    color: "purple"
-  },
-  {
-    id: 8,
-    slug: "slug-8",
-    title: {
-      es: "E-commerce Admin",
-      en: "E-commerce Admin"
-    },
-    logo: firebase,
-    screenshot: "https://picsum.photos/500/400",
-    technologies: [react, firebase],
-    description: {
-      es: "Panel de administración para la tienda online con gestión de productos y pedidos.",
-      en: "Admin panel for the online store with product and order management."
-    },
-    url: "https://ecommerce-admin.example.com",
-    github: "https://github.com/tu-usuario/ecommerce-admin",
-    color: "red"
-  },
-  {
-    id: 9,
-    slug: "slug-9",
-    title: {
-      es: "Recursos / E-commerce",
-      en: "Resources / E-commerce"
-    },
-    logo: resources,
-    screenshot: "https://picsum.photos/500/400",
-    technologies: [supabase, react],
-    description: {
-      es: "Colección de recursos y utilidades para proyectos de comercio electrónico.",
-      en: "Collection of resources and utilities for e-commerce projects."
-    },
-    url: "https://ecommerce-admin.example.com",
-    github: "https://github.com/tu-usuario/ecommerce-admin",
+    url: "https://mh-api-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/mh-api/",
     color: "light-blue"
   },
+  {
+    id: 80,
+    slug: "the-meal-wiki",
+    title: {
+      es: "Wiki de comidas",
+      en: "The Meal Wiki"
+    },
+    logo: meal,
+    screenshot: "https://picsum.photos/500/400",
+    technologies: [react],
+    description: {
+      es: "Esta web esta hecha para participar en la hackathon del dev, organizada por el Rincón del Dev. En esta web hecha con la API de TheMealDB, encontrarás toda la informacion de más de 300 recetas de comida, pudiendo filtrar por categoría de comida (entrante, postre, vegano...), ingredientes (vacuno, salmón, berenejena...) o por zona de origen (España, Japón, Italia...). También puedes buscar tu plato favorito o intentar ampliar tus límites con un plato aleatorio recomendado. En la página de cada plato encontrarás toda la informacíon, los ingredientes necesarios y sus cantidades y una serie de pasos para su elaboración, así como la fuente de donde se saca la informacion y un vídeo explicativo de YouTube.",
+      en: "This website was created to participate in the dev hackathon, organized by El Rincón del Dev. Using TheMealDB API, this site provides information on over 300 food recipes. You can filter by food category (starter, dessert, vegan, etc.), ingredients (beef, salmon, eggplant, etc.), or region of origin (Spain, Japan, Italy, etc.). You can also search for your favorite dish or try to broaden your horizons with a randomly recommended dish. On each dish's page, you'll find all the necessary information, ingredients and their quantities, and a series of steps for preparation, as well as the source of the information and a YouTube explanatory video."
+    },
+    url: "https://meal-wiki.netlify.app/",
+    github: "https://github.com/irenealcaine/meal-wiki",
+    color: "lime"
+  }
 ];
