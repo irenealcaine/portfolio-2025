@@ -18,23 +18,23 @@
   },
   "projects": {
     "project1": {
-      "title": "Proyecto 1",
-      "description": "Esta es una descripción detallada del proyecto 1 que muestra técnicas modernas de desarrollo web."
+      "title": "Plantilla",
+      "description": "Plantilla web lista para clonar y personalizar."
     },
     "project2": {
-      "title": "Proyecto 2",
-      "description": "Esta es una descripción detallada del proyecto 2 con soluciones innovadoras."
+      "title": "Recursos para devs",
+      "description": "Colección de recursos útiles para desarrolladores web."
     },
     "project3": {
-      "title": "Proyecto 3",
-      "description": "Esta es una descripción detallada del proyecto 3 con tecnologías de vanguardia."
+      "title": "Lista de la compra",
+      "description": "App para organizar tu lista de la compra de manera sencilla."
     },
     "notFound": "Proyecto no encontrado.",
     "backToPortfolio": "Volver al portfolio"
   },
   "portfolio": {
     "home": "Portafolio",
-    "description": "Todos mis proyectos y webs",
+    "description": "Todos mis websites y proyectos. ¡Pregúntame sobre mis proyectos de IA!",
     "all": "Todos"
   }
 }

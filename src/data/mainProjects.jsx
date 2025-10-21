@@ -1,26 +1,34 @@
-import icon from "../assets/react.svg"
+import list from "../assets/list.png"
+import spiral from "../assets/spiral.svg"
+import resources from "../assets/code.svg"
+
 import react from "../assets/react.svg"
+
+import heroui from "../assets/hero-ui.png"
+import sass from "../assets/sass.png"
+
+import supabase from "../assets/supabase.svg"
 import firebase from "../assets/firebase.svg"
 
 export const mainProjects = [
   {
     id: "project1",
-    icon: icon,
-    tech: [react, firebase],
-    color: "purple",
-    href: "https://www.google.es"
-  },
-  {
-    id: "project2",
-    icon: icon,
-    tech: [icon, icon],
+    icon: spiral,
+    tech: [react],
     color: "yellow",
     href: "https://www.google.es"
   },
   {
+    id: "project2",
+    icon: resources,
+    tech: [react, heroui, supabase],
+    color: "purple",
+    href: "https://www.google.es"
+  },
+  {
     id: "project3",
-    icon: icon,
-    tech: [icon, icon],
+    icon: list,
+    tech: [react, sass, firebase],
     color: "light-blue",
     href: "https://www.google.es"
   },

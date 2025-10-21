@@ -19,23 +19,23 @@
   },
   "projects": {
     "project1": {
-      "title": "Project 1",
-      "description": "This is a detailed description of project 1 showcasing modern web development techniques."
+      "title": "Template",
+      "description": "Ready-to-clone and customize web template."
     },
     "project2": {
-      "title": "Project 2",
-      "description": "This is a detailed description of project 2 featuring innovative solutions."
+      "title": "Dev resources",
+      "description": "Collection of useful resources for web developers."
     },
     "project3": {
-      "title": "Project 3",
-      "description": "This is a detailed description of project 3 with cutting-edge technologies."
+      "title": "Shopping List",
+      "description": "App to organize your shopping list easily."
     },
     "notFound": "Project not found.",
     "backToPortfolio": "Back to portfolio"
   },
   "portfolio": {
     "home": "Portfolio",
-    "description": "All my projects and websites",
+    "description": "All my websites and projects. Ask me about my AI projects!",
     "all": "All"
   },
   "footer": {

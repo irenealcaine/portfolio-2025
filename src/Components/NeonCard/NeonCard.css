@@ -82,9 +82,13 @@
    --color: var(--lime);
    --color-rgba: var(--lime-rgba);
   }
+
+  & h2{
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 600px) {
   .neon-card{
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem .75rem 1rem;
   }
 }

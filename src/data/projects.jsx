@@ -218,6 +218,6 @@ export const projects = [
     },
     url: "https://template-irene.netlify.app/",
     github: "https://github.com/irenealcaine/template-navbar",
-    color: "pink"
+    color: "light-blue"
   }
 ];
