@@ -43,11 +43,21 @@ const AboutPage = () => {
                     key={job.id}
                     id={job.id}
                     color={job.color}
-                    title={job.es.title}
-                    company={job.es.company}
-                    ubication={job.es.ubication}
-                    date={job.es.date}
-                    description={job.es.description}
+                    title={i18n.language === "es" ? job.es.title : job.en.title}
+                    company={
+                      i18n.language === "es" ? job.es.company : job.en.company
+                    }
+                    ubication={
+                      i18n.language === "es"
+                        ? job.es.ubication
+                        : job.en.ubication
+                    }
+                    date={i18n.language === "es" ? job.es.date : job.en.date}
+                    description={
+                      i18n.language === "es"
+                        ? job.es.description
+                        : job.en.description
+                    }
                   />
                 ))}
             </ul>
@@ -65,11 +75,19 @@ const AboutPage = () => {
                     key={edu.id}
                     id={edu.id}
                     color={edu.color}
-                    title={edu.es.title}
-                    company={edu.es.company}
-                    ubication={edu.es.ubication}
-                    date={edu.es.date}
-                    description={edu.es.description}
+                    title={i18n.language === "es" ? edu.es.title : edu.en.title}
+                    company={
+                      i18n.language === "es" ? edu.es.company : edu.en.company
+                    }
+                    ubication={
+                      i18n.language === "es" ? edu.es.ubication : edu.en.company
+                    }
+                    date={i18n.language === "es" ? edu.es.date : edu.en.date}
+                    description={
+                      i18n.language === "es"
+                        ? edu.es.description
+                        : edu.en.description
+                    }
                   />
                 ))}
             </ul>
