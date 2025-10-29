@@ -38,7 +38,13 @@
     "description": "All my websites and projects. Ask me about my AI projects!",
     "all": "All"
   },
-  "footer": {
-    "copyright": "© 2025 Irene Alcaine. All rights reserved."
+  "about":{
+    "title": "About me",
+    "description" : "Hello! I'm Irene Alcaine, a graduate in Engineering. However, after obtaining my degree, I discovered that my true passion is web development. I'm eager to have the opportunity to showcase my abilities professionally in the programming world, a field that I hold dear to my heart.",
+    "contact-title": "Contact",
+    "experience-title": "Experience",
+    "experience-description": "Even though my work experience is not directly related to programming, I've worked in various roles that have honed my skills in customer service, teamwork, handling pressure, and time management.",
+    "education-title": "Education",
+    "education-description": "Since early 2022, I've been satisfying my curiosity and learning on my own. Furthermore, I've taken some frontend courses and web page publishing."
   }
 }
