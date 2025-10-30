@@ -82,6 +82,7 @@
 
     & .social-media {
       & a {
+        font-size: 14px;
         & span {
           display: none;
         }
