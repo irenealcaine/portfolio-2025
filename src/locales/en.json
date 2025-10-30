@@ -8,15 +8,8 @@
   "home": {
     "name": "Irene Alcaine",
     "role": "Developer",
-    "description": "Passionate full-stack developer with experience in modern technologies. I love creating innovative solutions and constantly learning new tools to build amazing digital experiences.",
-    "aboutMore": "I specialize in web development using React, Node.js, and modern frameworks. My focus is on creating clean, efficient, and user-friendly applications."
-  },
-  "header": {
-    "home": "Home",
-    "about": "About",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
-  },
+    "description": "Passionate full-stack developer with experience in modern technologies. I love creating innovative solutions and constantly learning new tools to build amazing digital experiences."
+},
   "projects": {
     "project1": {
       "title": "Template",
@@ -31,7 +24,10 @@
       "description": "App to organize your shopping list easily."
     },
     "notFound": "Project not found.",
-    "backToPortfolio": "Back to portfolio"
+    "backToPortfolio": "Back to portfolio",
+    "visitSite": "Visit website",
+    "visitRepo": "GitHub repository",
+    "tech": "Used technologies"
   },
   "portfolio": {
     "home": "Portfolio",

@@ -32,7 +32,9 @@ const ProjectDetail = () => {
         <header className="project-detail__header">
           <img
             src={project.logo}
-            alt={`${i18n.language === "es" ? project.title.es : project.title.en} logo`}
+            alt={`${
+              i18n.language === "es" ? project.title.es : project.title.en
+            } logo`}
             className="project-detail__logo"
           />
           <h2 className="project-detail__title">
@@ -42,19 +44,30 @@ const ProjectDetail = () => {
 
         <img
           src={project.screenshot}
-          alt={`${i18n.language === "es" ? project.title.es : project.title.en} screenshot`}
+          alt={`${
+            i18n.language === "es" ? project.title.es : project.title.en
+          } screenshot`}
           className="project-detail__screenshot"
         />
 
         <p className="project-detail__description">
-          {i18n.language === "es" ? project.description.es : project.description.en}
+          {i18n.language === "es"
+            ? project.description.es
+            : project.description.en}
         </p>
 
-        <div className="project-detail__techs" aria-label="Tecnologías utilizadas">
-          <strong style={{ marginRight: 8 }}>Tecnologías:</strong>
+        <div
+          className="project-detail__techs"
+          aria-label="Tecnologías utilizadas"
+        >
+          <p>{t("projects.tech")}</p>
           {project.technologies.map((tech, idx) => (
             <div key={idx} className="project-detail__tech">
-              <img src={tech} alt={tech} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+              <img
+                src={tech}
+                alt={tech}
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              />
             </div>
           ))}
         </div>
@@ -62,12 +75,12 @@ const ProjectDetail = () => {
         <div className="project-detail__actions">
           {project.url && (
             <Button href={project.url} target="_blank" variant="primary">
-              {t("projects.visitSite") || "Visitar"}
+              {t("projects.visitSite")}
             </Button>
           )}
           {project.github && (
             <Button href={project.github} target="_blank" variant="ghost">
-              GitHub
+              {t("projects.visitRepo")}
             </Button>
           )}
         </div>

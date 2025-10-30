@@ -10,12 +10,6 @@
     "role": "Desarrolladora",
     "description": "Desarrolladora full-stack apasionada con experiencia en tecnologías modernas. Me encanta crear soluciones innovadoras y aprender constantemente nuevas herramientas para construir experiencias digitales increíbles."
   },
-  "header": {
-    "home": "Inicio",
-    "about": "Acerca",
-    "portfolio": "Portafolio",
-    "contact": "Contacto"
-  },
   "projects": {
     "project1": {
       "title": "Plantilla",
@@ -30,7 +24,10 @@
       "description": "App para organizar tu lista de la compra de manera sencilla."
     },
     "notFound": "Proyecto no encontrado.",
-    "backToPortfolio": "Volver al portfolio"
+    "backToPortfolio": "Volver al portfolio",
+    "visitSite": "Visitar web",
+    "visitRepo": "Repositorio GitHub",
+    "tech": "Tecnologías usadas"
   },
   "portfolio": {
     "home": "Portafolio",
