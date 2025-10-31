@@ -26,7 +26,7 @@ const ProjectDetail = () => {
 
   return (
     <Layout>
-      <div className="project-detail">
+      <div className={`project-detail ${project.color}`}>
         <BackLink to="/portfolio" text={t("projects.backToPortfolio")} />
 
         <header className="project-detail__header">
@@ -37,9 +37,9 @@ const ProjectDetail = () => {
             } logo`}
             className="project-detail__logo"
           />
-          <h2 className="project-detail__title">
+          <h1 className="project-detail__title">
             {i18n.language === "es" ? project.title.es : project.title.en}
-          </h2>
+          </h1>
         </header>
 
         <img
