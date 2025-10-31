@@ -3,15 +3,11 @@ import Layout from "../../Components/Layout/Layout";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import "./Portfolio.css";
 import { projects } from "../../data/projects";
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 import Button from "../../Components/Button/Button";
 
-
-
 // Obtener todas las tecnologías únicas
-const allTechs = Array.from(
-  new Set(projects.flatMap((p) => p.technologies))
-);
+const allTechs = Array.from(new Set(projects.flatMap((p) => p.technologies)));
 
 const PortfolioPage = () => {
   const { t, i18n } = useTranslation();
@@ -31,44 +27,41 @@ const PortfolioPage = () => {
 
   return (
     <Layout>
-        <h1>{t('portfolio.home')}</h1>
-        <div>
-          <div className="buttons-container">
-            <Button
-              type="button"
-              variant={filter === "Todos" ? "primary" : "ghost"}
-              size="sm"
-              onClick={() => setFilter("Todos")}
-            >
-              {t?.('portfolio.all') || 'Todos'}
-            </Button>
+      <h1 className="portfolio-title">{t("portfolio.home")}</h1>
+      <div>
+        <div className="buttons-container">
+          <Button
+            type="button"
+            variant={filter === "Todos" ? "primary" : "ghost"}
+            onClick={() => setFilter("Todos")}
+          >
+            {t?.("portfolio.all") || "Todos"}
+          </Button>
 
-            {allTechs.map((tech) => (
-              <Button
-                key={tech}
-                type="button"
-                variant={filter === tech ? "primary" : "ghost"}
-                size="sm"
-                onClick={() => setFilter(tech)}
-               >
-                <img src={tech} alt={tech} style={{width: 16, height: 16}} />
-              </Button>
-            ))}
-          </div>
-        </div>
-        <div className="projects-container"
-        >
-          {displayedProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={i18n.language === "es" ? project.title.es : project.title.en}
-              slug={project.slug}
-              technologies={project.technologies}
-              logo={project.logo}
-              color={project.color}
-            />
+          {allTechs.map((tech) => (
+            <Button
+              key={tech}
+              type="button"
+              variant={filter === tech ? "primary" : "ghost"}
+              onClick={() => setFilter(tech)}
+            >
+              <img src={tech} alt={tech} style={{ width: 16, height: 16 }} />
+            </Button>
           ))}
         </div>
+      </div>
+      <div className="projects-container">
+        {displayedProjects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            title={i18n.language === "es" ? project.title.es : project.title.en}
+            slug={project.slug}
+            technologies={project.technologies}
+            logo={project.logo}
+            color={project.color}
+          />
+        ))}
+      </div>
     </Layout>
   );
 };

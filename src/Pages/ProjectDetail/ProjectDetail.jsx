@@ -4,7 +4,7 @@ import Layout from "../../Components/Layout/Layout";
 import { projects } from "../../data/projects";
 import { useTranslation } from "react-i18next";
 import BackLink from "../../Components/BackLink/BackLink";
-import Button from "../../Components/Button/Button"; // <-- agregado
+import Button from "../../Components/Button/Button";
 import "./ProjectDetail.css";
 
 const ProjectDetail = () => {

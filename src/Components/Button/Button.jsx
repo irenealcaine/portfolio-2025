@@ -5,7 +5,6 @@ import "./Button.css";
 const Button = ({
   children,
   variant = "primary", // 'primary' | 'ghost' | 'link'
-  size = "md", // 'sm' | 'md' | 'lg'
   href,
   to,
   onClick,
@@ -14,7 +13,7 @@ const Button = ({
   className = "",
   ...rest
 }) => {
-  const classes = `btn btn--${variant} btn--${size} ${className}`.trim();
+  const classes = `btn btn--${variant} ${className}`.trim();
 
   if (to) {
     return (
