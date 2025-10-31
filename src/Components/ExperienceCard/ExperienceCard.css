@@ -1,128 +1,128 @@
 .timeline-item {
-    width: calc(50% + 3px);
-    padding: 20px;
-    position: relative;
+  width: calc(50% + 3px);
+  padding: 20px;
+  position: relative;
 
-    &.pink {
-        --color: var(--pink);
-    }
+  &.pink {
+    --color: var(--pink);
+  }
 
-    &.green {
-        --color: var(--green);
-    }
+  &.green {
+    --color: var(--green);
+  }
 
-    &.yellow {
-        --color: var(--yellow);
-    }
+  &.yellow {
+    --color: var(--yellow);
+  }
 
-    &.light-blue {
-        --color: var(--light-blue);
-    }
+  &.light-blue {
+    --color: var(--light-blue);
+  }
 
-    &.dark-blue {
-        --color: var(--dark-blue);
-    }
+  &.dark-blue {
+    --color: var(--dark-blue);
+  }
 
-    &.orange {
-        --color: var(--orange);
-    }
+  &.orange {
+    --color: var(--orange);
+  }
 
-    &.red {
-        --color: var(--red);
-    }
+  &.red {
+    --color: var(--red);
+  }
 
-    &.purple {
-        --color: var(--purple);
-    }
+  &.purple {
+    --color: var(--purple);
+  }
 
+  & .marker {
+    position: absolute;
+    top: 26px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--color);
+    margin-top: 18px;
+    z-index: 5;
+    filter: drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color))
+      drop-shadow(0 0 15px var(--color));
+  }
+
+  &.timeline-block-right {
+    float: right;
 
     & .marker {
-        position: absolute;
-        top: 26px;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: white;
-        border: 1px solid var(--color);
-        margin-top: 18px;
-        z-index: 5;
-        filter: drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color)) drop-shadow(0 0 15px var(--color));
+      margin-left: -20px;
     }
+  }
 
-    &.timeline-block-right {
-        float: right;
+  &.timeline-block-left {
+    float: left;
+    direction: rtl;
 
-        & .marker {
-            margin-left: -20px;
-        }
+    & .marker {
+      margin-right: -20px;
     }
+  }
 
-    &.timeline-block-left {
-        float: left;
-        direction: rtl;
+  & .timeline-title {
+    display: inline-block;
+    text-shadow: 0 0 5px var(--color), 0 0 10px var(--color);
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--color), inset 0 0 10px var(--color);
+  }
 
-        & .marker {
-            margin-right: -20px;
-        }
+  & .company-ubication {
+    margin-top: 20px;
+    border-bottom: 1px solid #fff;
+    font-size: 1.1rem;
+
+    & span {
+      font-weight: bold;
     }
+  }
 
-    & .timeline-title {
-        display: inline-block;
-        text-shadow: 0 0 10px var(--color);
-        border: 2px solid #fff;
-        padding: 5px 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px var(--color), inset 0 0 10px var(--color);
-    }
+  & .job-description {
+    color: #aaa;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
 
-    & .company-ubication {
-        margin-top: 20px;
-        border-bottom: 1px solid #fff;
-        font-size: 1.1rem;
-
-        & span {
-            font-weight: bold;
-        }
-    }
-
-    & .job-description {
-        color: #aaa;
-        padding: 10px 15px;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    & .date {
-        border-top: 1px solid #fff;
-        font-size: 1.1rem;
-    }
+  & .date {
+    border-top: 1px solid #fff;
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .timeline-item {
-        width: 100%;
-        margin-bottom: 30px;
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 30px;
 
-        & .marker {
-            top: 18px
-        }
-
-        &.timeline-block-right {
-            float: none;
-
-            & .marker {
-                margin-left: -20px;
-            }
-        }
-
-        &.timeline-block-left {
-            float: none;
-            direction: ltr;
-
-            & .marker {
-                margin-left: -20px;
-            }
-        }
+    & .marker {
+      top: 18px;
     }
+
+    &.timeline-block-right {
+      float: none;
+
+      & .marker {
+        margin-left: -20px;
+      }
+    }
+
+    &.timeline-block-left {
+      float: none;
+      direction: ltr;
+
+      & .marker {
+        margin-left: -20px;
+      }
+    }
+  }
 }

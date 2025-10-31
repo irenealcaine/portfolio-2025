@@ -11,7 +11,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <h1>{t("about.title")}</h1>
+      <h1 className="about-header">{t("about.title")}</h1>
       <p> {t("about.description")} </p>
 
       <div className="container">
