@@ -8,9 +8,9 @@ export const experience = [
       ubication: "Zaragoza - Casinos,Valencia",
       date: "2016 - 2022",
       description: [
-        "Atención al cliente",
-        "Preparación de pan y repostería, así como administración de las materias y diferentes productos",
-        "Encargada de stock, rotación y pedidos al proveedor",
+        "Varios trabajos de atención al cliente, creando y resolviendo incidencias",
+        "Organización de equipos y formación de nuevos empleados",
+        "Encargada de stock, rotación y pedidos al proveedor de diversos productos",
       ],
     },
     en: {
@@ -19,9 +19,9 @@ export const experience = [
       ubication: "Zaragoza - Casinos, Valencia",
       date: "2016 - 2022",
       description: [
-        "Customer service",
-        "Preparation of bread and pastries, as well as management of ingredients and various products",
-        "Responsible for stock, rotation, and orders to the supplier",
+        "Various customer service jobs, creating and resolving incidents",
+        "Team organization and training of new employees",
+        "Responsible for stock, rotation, and orders to the supplier of various products",
       ],
     },
   },
@@ -33,14 +33,24 @@ export const experience = [
       company: "Better Consultants",
       ubication: "Remoto",
       date: "2024 - Actualidad",
-      description: ["Cosa 1", "Cosa 2", "Cosa 3"],
+      description: [
+        "Diseño, maquetación y programación de comunicaciones de banca a clientes",
+        "Colaboración en proyectos de equipo", 
+        "Implementación de mejoras en la experiencia del usuario",
+        "Subidas a producción y resolución de incidencias"
+      ],
     },
     en: {
       title: "Junior Developer",
       company: "Better Consultants",
       ubication: "Remote",
       date: "2024 - Present",
-      description: ["Thing 1", "Thing 2", "Thing 3"],
+      description: [
+        "Design, layout, and programming of banking communications to clients",
+        "Collaboration on team projects",
+        "Implementation of improvements in user experience",
+        "Production deployments and incident resolution"
+      ],
     },
   },
 ];

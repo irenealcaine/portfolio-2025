@@ -75,4 +75,29 @@ export const education = [
       ],
     },
   },
+
+  {
+    id: "4",
+    color: "purple",
+    es: {
+      title: "Ciberseguridad avanzada en entornos de las tecnologías de la operación",
+      company: "MainJobs - Cisco",
+      ubication: "Online",
+      date: "May 2024 - Jul 2024",
+      description: [
+        "Curso de 120 horas de duración en modalidad online con tutorías en directo",
+        "Ejercicios prácticos y evaluación continua con casos reales del sector",
+      ],
+    },
+    en: {
+      title: "Advanced Cybersecurity in Operational Technology Environments",
+      company: "MainJobs - Cisco",
+      ubication: "Online",
+      date: "May 2024 - Jul 2024",
+      description: [
+        "120-hour online course with live tutoring sessions",
+        "Practical exercises and continuous assessment with real-world cases from the industry",
+      ],
+    },
+  },
 ];
