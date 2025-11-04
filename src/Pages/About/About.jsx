@@ -1,3 +1,4 @@
+import Button from "../../Components/Button/Button";
 import ExperienceCard from "../../Components/ExperienceCard/ExperienceCard";
 import Layout from "../../Components/Layout/Layout";
 import { education } from "../../data/education";
@@ -14,6 +15,17 @@ const AboutPage = () => {
       <h1 className="about-header">{t("about.title")}</h1>
       <p> {t("about.description")} </p>
 
+      <div className="cv-button">
+        <Button
+          href="src/data/CV_Irene_Alcaine.pdf"
+          target="_blank"
+          download
+          variant="primary"
+        >
+          {t("about.downloadCV")}
+        </Button>
+      </div>
+
       <div className="container">
         <div className="contact">
           <h2 className="about-title">{t("about.contact-title")}</h2>
@@ -27,6 +39,8 @@ const AboutPage = () => {
               </div>
             ))}
           </div>
+
+
         </div>
 
         <div className="experience">
