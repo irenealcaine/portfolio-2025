@@ -17,7 +17,7 @@ const AboutPage = () => {
 
       <div className="cv-button">
         <Button
-          href="src/data/CV_Irene_Alcaine.pdf"
+          href="src/data/CV_Irene_Alcaine_Alvarez.pdf"
           target="_blank"
           download
           variant="primary"
