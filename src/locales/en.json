@@ -12,7 +12,7 @@
 },
   "projects": {
     "project1": {
-      "title": "Template",
+      "title": "Web Template",
       "description": "Ready-to-clone and customize web template."
     },
     "project2": {
@@ -36,11 +36,11 @@
   },
   "about":{
     "title": "About me",
-    "description" : "Hello! I'm Irene Alcaine, a graduate in Engineering. However, after obtaining my degree, I discovered that my true passion is web development. I'm eager to have the opportunity to showcase my abilities professionally in the programming world, a field that I hold dear to my heart.",
+    "description" : "Hello! I'm Irene Alcaine, a graduate in Engineering and Junior programmer. After obtaining my degree, I discovered that my true passion is development, especially web development. I enjoy beautiful and original designs, and whenever I can, I take some time to develop my ideas and personal projects.",
     "contact-title": "Contact",
     "experience-title": "Experience",
-    "experience-description": "Even though my work experience is not directly related to programming, I've worked in various roles that have honed my skills in customer service, teamwork, handling pressure, and time management.",
+    "experience-description": "Recently, I have been able to dedicate myself professionally to programming, and I couldn't be happier, without neglecting the years of experience developing my soft skills in other jobs, such as customer service, teamwork, stress management, and time management.",
     "education-title": "Education",
-    "education-description": "Since early 2022, I've been satisfying my curiosity and learning on my own. Furthermore, I've taken some frontend courses and web page publishing."
+    "education-description": "Since early 2022, I have been satisfying my curiosity and learning on my own. Additionally, I have completed some frontend and web publishing courses. I have never stopped learning new technologies and improving my skills in web development."
   }
 }

@@ -12,8 +12,8 @@
   },
   "projects": {
     "project1": {
-      "title": "Plantilla",
-      "description": "Plantilla web lista para clonar y personalizar."
+      "title": "Plantilla web",
+      "description": "Plantilla lista para clonar y crear tu nueva página web con React y CSS."
     },
     "project2": {
       "title": "Recursos para devs",
@@ -36,11 +36,11 @@
   },
   "about":{
     "title": "Sobre mí",
-    "description" : "¡Hola! Soy Irene Alcaine, graduada en Ingeniería. Sin embargo, tras obtener mi título, descubrí que mi verdadera pasión es el desarrollo web. Estoy ansiosa por tener la oportunidad de demostrar mis capacidades profesionalmente en el mundo de la programación, al que tanto cariño le tengo.",
+    "description" : "¡Hola! Soy Irene Alcaine, graduada en Ingeniería y programadora Junior. tras obtener mi título, descubrí que mi verdadera pasión es el desarrollo, sobre todo web. Me gustan los diseños bonitos y originales y siempre que puedo saco un rato para desarrollar mis ideas y proyectos personales.",
     "contact-title": "Contacto",
     "experience-title": "Experiencia",
-    "experience-description": "A pesar de que mi experiencia laboral no está directamente relacionada con la programación, he trabajado en varios sitios que han perfeccionado mis habilidades en atención al cliente, trabajo en equipo y bajo presión y organización del tiempo.",
+    "experience-description": "Recientemente he conseguido dedicarme profesionalmente a la programación y no podría estar más contenta, sin dejar de lado los años de experiencia desarrollando mis habilidades blandas en otros trabajos, como la atención al cliente, el trabajo en equipo, la gestión del estrés y la gestión del tiempo.",
     "education-title": "Formación",
-    "education-description": "Desde principios de 2022, he estado saciando mi curiosidad y aprendiendo por mi cuenta. Además, he realizado algunos cursos de frontend y publicación de páginas web."
+    "education-description": "Desde principios de 2022, he estado saciando mi curiosidad y aprendiendo por mi cuenta. Además, he realizado algunos cursos de frontend y publicación de páginas web. Nunca he dejado de aprender nuevas tecnologías y mejorar mis habilidades en desarrollo web."
   }
 }
