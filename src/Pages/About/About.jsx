@@ -6,6 +6,7 @@ import { experience } from "../../data/experience";
 import { socialMedia } from "../../data/socialMedia";
 import "./About.css";
 import { useTranslation } from "react-i18next";
+import CV from "../../data/CV_Irene_Alcaine_Alvarez.pdf";
 
 const AboutPage = () => {
   const { t, i18n } = useTranslation();
@@ -17,9 +18,8 @@ const AboutPage = () => {
 
       <div className="cv-button">
         <Button
-          href="src/data/CV_Irene_Alcaine_Alvarez.pdf"
-          target="_blank"
-          download
+          href={CV}
+          download="CV_Irene_Alcaine_Alvarez.pdf"
           variant="primary"
         >
           {t("about.downloadCV")}
