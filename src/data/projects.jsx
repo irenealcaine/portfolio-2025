@@ -223,8 +223,8 @@ export const projects = [
     screenshot: resourcesweb,
     technologies: [react, heroui, supabase],
     description: {
-      es: "Plantilla lista para usar para tus proyectos de React con CSS puro. Tiene varias opciones para el header, footer y navbar, así como diversos componentes, todo ello con colores vivos, modo claro/oscuro y completamente responsivo, además de rutas ya preparadas. Solo tienes que clonar el repositorio y empezar a crear tu proyecto.",
-      en: "Template ready to use for your React projects with pure CSS. It has several options for the header, footer and navbar, as well as various components, all with vibrant colors, light/dark mode and full responsive, as well as pre-prepared routes. You just have to clone the repository and start creating your project.",
+      es: "Recopilacion de recursos para desarrolladores web, desde iconos y paletas de colores, hasta guías para superar entrevistas técnicas y herramientas online. Todo esto organizado en categorías y con un buscador para hacer mas facil encontrar lo que buscas.",
+      en: "Collection of resources for web developers, from icons and color palettes to guides for acing technical interviews and online tools. All organized into categories and with a search function to make it easier to find what you're looking for.",
     },
     url: "https://dev-resources-irene.netlify.app",
     github: "https://github.com/irenealcaine/dev-resources-app",
