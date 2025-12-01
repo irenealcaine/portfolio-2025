@@ -8,6 +8,7 @@ import meal from "../assets/meal.png";
 import list from "../assets/list.png";
 import spiral from "../assets/spiral.svg";
 import resources from "../assets/code.svg";
+import cv from "../assets/cv.png";
 
 import todoweb from "../assets/todododo-web.png";
 import weatherweb from "../assets/tiempo-web.png";
@@ -19,8 +20,10 @@ import mealweb from "../assets/mealwiki-web.png";
 import listweb from "../assets/list-web.png";
 import spiralweb from "../assets/template-web.png";
 import resourcesweb from "../assets/resources-web.png";
+import cvweb from "../assets/cvweb.png";
 
 import react from "../assets/react.svg";
+import vue from "../assets/vue.svg";
 
 import firebase from "../assets/firebase.svg";
 import supabase from "../assets/supabase.svg";
@@ -229,5 +232,24 @@ export const projects = [
     url: "https://dev-resources-irene.netlify.app",
     github: "https://github.com/irenealcaine/dev-resources-app",
     color: "light-blue",
+  },
+  
+  {
+    id: 120,
+    slug: "cv-builder",
+    title: {
+      es: "CV Builder",
+      en: "CV Builder",
+    },
+    logo: cv,
+    screenshot: cvweb,
+    technologies: [vue, tailwind],
+    description: {
+      es: "Generador de currículums vitae aptos para filtros ATS (Applicant Tracking System). Permite crear un CV profesional y personalizado de manera sencilla, con todas las secciones necesarias. Una vez completado, se puede descargar en formato PDF listo para enviar a empleadores. Incluye datos de ejemplo para ver fácilmente como va a quedar antes de tener que rellenar  con tus datos.",
+      en: "CV builder suitable for ATS (Applicant Tracking System) filters. Allows you to create a professional and personalized CV easily, with all the necessary sections. Once completed, it can be downloaded in PDF format ready to send to employers. Includes sample data to easily see how it will look before filling in your own information.",
+    },
+    url: "https://curriculum-vitae-builder-cv.netlify.app",
+    github: "https://github.com/irenealcaine/cv-app",
+    color: "purple",
   },
 ];
