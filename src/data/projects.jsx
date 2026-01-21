@@ -9,6 +9,7 @@ import list from "../assets/list.png";
 import spiral from "../assets/spiral.svg";
 import resources from "../assets/code.svg";
 import cv from "../assets/cv.png";
+import logosaurus from "../assets/logosaurus.png";
 
 import todoweb from "../assets/todododo-web.png";
 import weatherweb from "../assets/tiempo-web.png";
@@ -21,6 +22,7 @@ import listweb from "../assets/list-web.png";
 import spiralweb from "../assets/template-web.png";
 import resourcesweb from "../assets/resources-web.png";
 import cvweb from "../assets/cvweb.png";
+import dinosapiweb from "../assets/dinosapiweb.png";
 
 import react from "../assets/react.svg";
 import vue from "../assets/vue.svg";
@@ -33,6 +35,8 @@ import materialui from "../assets/materialui.svg";
 import tailwind from "../assets/tailwind.svg";
 import sass from "../assets/sass.png";
 import heroui from "../assets/hero-ui.png";
+
+import node from "../assets/node.svg";
 
 export const projects = [
   {
@@ -251,5 +255,24 @@ export const projects = [
     url: "https://curriculum-vitae-builder-cv.netlify.app",
     github: "https://github.com/irenealcaine/cv-app",
     color: "purple",
+  },
+
+    {
+    id: 130,
+    slug: "jwe3-api",
+    title: {
+      es: "API de Jurassic World Evolution 3",
+      en: "Jurassic World Evolution 3 API",
+    },
+    logo: logosaurus,
+    screenshot: dinosapiweb,
+    technologies: [node],
+    description: {
+      es: "API RESTful del videojuego Jurassic World Evolution 3 con datos de los dinosaurios, lugares de excavación, habitats, dietas y familias.",
+      en: "RESTful API for the videogame Jurassic World Evolution 3 featuring dinosaurs, dig sites, habitats, diets, and families data.",
+    },
+    url: "https://jwe3-api.up.railway.app/",
+    github: "https://github.com/irenealcaine/jwe3-api",
+    color: "lime",
   },
 ];
