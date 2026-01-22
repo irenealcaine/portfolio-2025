@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import NeonCard from "../../Components/NeonCard/NeonCard"
 import "./Home.css"
 import { socialMedia } from "../../data/socialMedia.jsx"
@@ -8,10 +9,27 @@ import react from "../../assets/react.svg"
 import firebase from "../../assets/firebase.svg"
 import tailwind from "../../assets/tailwind.svg"
 import blog from "../../assets/blog.svg"
-import { posts } from "../../data/blogPosts.jsx"
+import { getLastThreePostsSlugs } from "../../services/blogService.js"
 
 const HomePage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const [posts, setPosts] = useState([])
+  const [loadingPosts, setLoadingPosts] = useState(true)
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const slugs = await getLastThreePostsSlugs()
+        setPosts(slugs)
+      } catch (error) {
+        console.error("Error al cargar los posts:", error)
+        setPosts([])
+      } finally {
+        setLoadingPosts(false)
+      }
+    }
+    fetchPosts()
+  }, [])
 
   return (
     <main className="home">
@@ -55,10 +73,18 @@ const HomePage = () => {
       <NeonCard id="blog" color="green">
         <h2>{t('common.blog')}</h2>
         <p>{t('common.blogDescription')}</p>
-        {posts.map((post) => (
-          <a href={`https://blogdeirene.netlify.app/${post.slug}`} target="_blank" rel="noopener noreferrer" key={post.slug}>/{post.slug}</a>
-        ))}
-        <a href={`https://blogdeirene.netlify.app`} target="_blank" rel="noopener noreferrer">/..</a>
+        {loadingPosts ? (
+          <p style={{ fontSize: '0.9em', opacity: 0.7 }}>Cargando posts...</p>
+        ) : posts.length > 0 ? (
+          <>
+            {posts.map((post) => (
+              <a href={`https://blogdeirene.netlify.app/${post.slug}`} target="_blank" rel="noopener noreferrer" key={post.slug}>/{post.slug}</a>
+            ))}
+            <a href={`https://blogdeirene.netlify.app`} target="_blank" rel="noopener noreferrer">/..</a>
+          </>
+        ) : (
+          <p style={{ fontSize: '0.9em', opacity: 0.7 }}>No hay posts disponibles</p>
+        )}
         <img className="blog-icon icon" src={blog} alt="Blog icon" />
       </NeonCard>
 
