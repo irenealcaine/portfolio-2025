@@ -12,8 +12,8 @@
   },
   "projects": {
     "project1": {
-      "title": "Plantilla web",
-      "description": "Plantilla lista para clonar y crear tu nueva página web con React y CSS."
+      "title": "API de JWE3",
+      "description": "API RESTful con datos del videojuego Jurassic World Evolution 3."
     },
     "project2": {
       "title": "Recursos para devs",

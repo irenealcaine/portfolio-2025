@@ -12,8 +12,8 @@
 },
   "projects": {
     "project1": {
-      "title": "Web Template",
-      "description": "Ready-to-clone and customize web template."
+      "title": "JWE3 API",
+      "description": "RESTful API from Jurassic World Evolution 3 videogame."
     },
     "project2": {
       "title": "Dev resources",

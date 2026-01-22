@@ -1,22 +1,21 @@
 import cv from "../assets/cv.png"
-import spiral from "../assets/spiral.svg"
 import resources from "../assets/code.svg"
+import logosaurus from "../assets/logosaurus.png";
 
 import react from "../assets/react.svg"
 import vue from "../assets/vue.svg"
 import tailwind from "../assets/tailwind.svg"
-
 import heroui from "../assets/hero-ui.png"
-
 import supabase from "../assets/supabase.svg"
+import node from "../assets/node.svg";
 
 export const mainProjects = [
   {
     id: "project1",
-    icon: spiral,
-    tech: [react],
+    icon: logosaurus,
+    tech: [node],
     color: "yellow",
-    href: "https://template-irene.netlify.app/"
+    href: "https://jwe3-api.up.railway.app/"
   },
   {
     id: "project2",
