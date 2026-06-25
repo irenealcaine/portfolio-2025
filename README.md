@@ -1,16 +1,39 @@
-# React + Vite
+# Portfolio 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web personal de portfolio para Irene Alcaine, desarrolladora principalmente frontend. Incluye proyectos, experiencia, formacion y blog.
 
-Currently, two official plugins are available:
+## Descripcion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplicacion web que sirve como portfolio personal para mostrar proyectos, experiencia laboral, formacion academica y publicaciones de blog. Soporta dos idiomas (espanol e ingles) y esta conectada con Firebase para el contenido del blog.
 
-## React Compiler
+## Paginas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Home** - Pagina principal con tarjetas neon de presentacion, redes sociales y proyectos destacados
+- **Portfolio** - Galeria de proyectos con filtrado por tecnologia
+- **Sobre mi** - Experiencia laboral, formacion academica y contacto
+- **Detalle de proyecto** - Pagina individual de cada proyecto
+- **Blog** - Ultimas publicaciones obtenidas de Firestore
 
-## Expanding the ESLint configuration
+## Caracteristicas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Internacionalizacion (espanol/ingles) con i18next
+- Tarjetas neon con efecto hover
+- Filtrado de proyectos por tecnologia
+- Integracion con Firebase Firestore para el blog
+- Descarga de CV en PDF
+- Timeline de experiencia y formacion
+- Redes sociales con iconos
+- PWA con manifest.json
+- Interfaz responsiva (movil, tablet, desktop)
+- Modo oscuro por defecto
+
+## Stack tecnologico
+
+- React 19
+- Vite 7
+- JavaScript (ES6+)
+- CSS plain
+- React Router DOM 7
+- i18next / react-i18next
+- Firebase (Firestore)
+- react-icons
