@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Layout from "../../Components/Layout/Layout";
+import SEOHead from "../../Components/SEOHead/SEOHead";
 import { projects } from "../../data/projects";
 import { useTranslation } from "react-i18next";
 import BackLink from "../../Components/BackLink/BackLink";
@@ -16,6 +17,11 @@ const ProjectDetail = () => {
   if (!project) {
     return (
       <Layout>
+        <SEOHead
+          title={`${t("projects.notFound")} | Irene Alcaine`}
+          description={t("projects.notFound")}
+          path={`/portfolio/${slug}`}
+        />
         <div className="project-detail">
           <h2>{t("projects.notFound")}</h2>
           <BackLink to="/portfolio">{t("projects.backToPortfolio")}</BackLink>
@@ -24,8 +30,17 @@ const ProjectDetail = () => {
     );
   }
 
+  const projectName = i18n.language === "es" ? project.title.es : project.title.en;
+  const projectDescription = i18n.language === "es" ? project.description.es : project.description.en;
+
   return (
     <Layout>
+      <SEOHead
+        title={`${projectName} | Irene Alcaine`}
+        description={projectDescription}
+        path={`/portfolio/${slug}`}
+        type="article"
+      />
       <div className={`project-detail ${project.color}`}>
         <BackLink to="/portfolio" text={t("projects.backToPortfolio")} />
 

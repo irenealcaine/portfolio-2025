@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import NeonCard from "../../Components/NeonCard/NeonCard"
+import SEOHead from "../../Components/SEOHead/SEOHead"
 import "./Home.css"
 import { socialMedia } from "../../data/socialMedia.jsx"
 import { mainProjects } from "../../data/mainProjects.jsx"
@@ -12,7 +13,7 @@ import blog from "../../assets/blog.svg"
 import { getLastThreePostsSlugs } from "../../services/blogService.js"
 
 const HomePage = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [posts, setPosts] = useState([])
   const [loadingPosts, setLoadingPosts] = useState(true)
 
@@ -31,8 +32,26 @@ const HomePage = () => {
     fetchPosts()
   }, [])
 
+  const seo = {
+    es: {
+      title: "Irene Alcaine | Desarrolladora Full-Stack",
+      description: "Portfolio de Irene Alcaine, desarrolladora full-stack. Proyectos web con React, Firebase, Tailwind y más. Soluciones innovadoras y aprendizaje continuo.",
+    },
+    en: {
+      title: "Irene Alcaine | Full-Stack Developer",
+      description: "Irene Alcaine's portfolio, full-stack developer. Web projects with React, Firebase, Tailwind and more. Innovative solutions and continuous learning.",
+    },
+  }
+
+  const currentSeo = i18n.language === "es" ? seo.es : seo.en
+
   return (
     <main className="home">
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        path="/"
+      />
       <NeonCard id="about" color="pink" to={"/about"}>
         <h1>{t('home.name')}</h1>
         <h2>{t('home.role')}</h2>
@@ -55,7 +74,7 @@ const HomePage = () => {
           <p>{t(`projects.${project.id}.description`)}</p>
           <div className="techs">
             {project.tech && project.tech.map((icon, index) => (
-              <img className="tech" key={index} src={icon} alt={`Tech icon ${index}`} />
+              <img className="tech" key={index} src={icon} alt={`Technology ${index + 1}`} />
             ))}
           </div>
           <img className="icon" src={project.icon} alt={`${project.title} icon`} />

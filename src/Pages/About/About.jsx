@@ -1,6 +1,7 @@
 import Button from "../../Components/Button/Button";
 import ExperienceCard from "../../Components/ExperienceCard/ExperienceCard";
 import Layout from "../../Components/Layout/Layout";
+import SEOHead from "../../Components/SEOHead/SEOHead";
 import { education } from "../../data/education";
 import { experience } from "../../data/experience";
 import { socialMedia } from "../../data/socialMedia";
@@ -11,8 +12,26 @@ import CV from "../../data/CV_Irene_Alcaine_Alvarez.pdf";
 const AboutPage = () => {
   const { t, i18n } = useTranslation();
 
+  const seo = {
+    es: {
+      title: "Sobre mí | Irene Alcaine",
+      description: "Conoce a Irene Alcaine, desarrolladora full-stack. Experiencia profesional, formación en ingeniería y pasión por el desarrollo web y las tecnologías modernas.",
+    },
+    en: {
+      title: "About Me | Irene Alcaine",
+      description: "Meet Irene Alcaine, a full-stack developer. Professional experience, engineering background, and passion for web development and modern technologies.",
+    },
+  }
+
+  const currentSeo = i18n.language === "es" ? seo.es : seo.en
+
   return (
     <Layout>
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        path="/about"
+      />
       <h1 className="about-header">{t("about.title")}</h1>
       <p> {t("about.description")} </p>
 

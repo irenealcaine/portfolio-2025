@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../Components/Layout/Layout";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
+import SEOHead from "../../Components/SEOHead/SEOHead";
 import "./Portfolio.css";
 import { projects } from "../../data/projects";
 import { useTranslation } from "react-i18next";
@@ -25,8 +26,26 @@ const PortfolioPage = () => {
   // mostrar en orden inverso al array original
   const displayedProjects = filteredProjects.slice().reverse();
 
+  const seo = {
+    es: {
+      title: "Portafolio | Irene Alcaine",
+      description: "Todos los proyectos web de Irene Alcaine. Aplicaciones con React, Firebase, Tailwind, Vue y más. Explora mi trabajo en desarrollo frontend y full-stack.",
+    },
+    en: {
+      title: "Portfolio | Irene Alcaine",
+      description: "All web projects by Irene Alcaine. Applications built with React, Firebase, Tailwind, Vue and more. Explore my frontend and full-stack development work.",
+    },
+  }
+
+  const currentSeo = i18n.language === "es" ? seo.es : seo.en
+
   return (
     <Layout>
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        path="/portfolio"
+      />
       <h1 className="portfolio-title">{t("portfolio.home")}</h1>
       <div>
         <div className="buttons-container">
