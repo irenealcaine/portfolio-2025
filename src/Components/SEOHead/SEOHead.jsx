@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../../contexts/LanguageContext";
 
-const SITE_URL = "https://irenealcaine.com";
+const SITE_URL = "https://irenealcainealvarez.es";
 
 const SEOHead = ({
   title,
@@ -34,9 +34,15 @@ const SEOHead = ({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
 
       <html lang={currentLanguage} />
+
+      {/* Hreflang */}
+      <link rel="alternate" hreflang="es" href={url} />
+      <link rel="alternate" hreflang="en" href={url} />
+      <link rel="alternate" hreflang="x-default" href={url} />
 
       {/* Open Graph */}
       <meta property="og:type" content={type} />
