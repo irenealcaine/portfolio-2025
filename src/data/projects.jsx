@@ -10,6 +10,7 @@ import spiral from "../assets/spiral.svg";
 import resources from "../assets/code.svg";
 import cv from "../assets/cv.png";
 import logosaurus from "../assets/logosaurus.png";
+import gitagotchi from "../assets/gitagotchi-happy.png";
 
 import todoweb from "../assets/todododo-web.png";
 import weatherweb from "../assets/tiempo-web.png";
@@ -23,6 +24,7 @@ import spiralweb from "../assets/template-web.png";
 import resourcesweb from "../assets/resources-web.png";
 import cvweb from "../assets/cvweb.png";
 import dinosapiweb from "../assets/dinosapiweb.png";
+import gitagotchiweb from "../assets/gitagotchi2.png";
 
 import react from "../assets/react.svg";
 import vue from "../assets/vue.svg";
@@ -274,5 +276,24 @@ export const projects = [
     url: "https://jwe3-api.up.railway.app/",
     github: "https://github.com/irenealcaine/jwe3-api",
     color: "lime",
+  },
+
+      {
+    id: 140,
+    slug: "Gitagotchi",
+    title: {
+      es: "Mascota virtual de GitHub",
+      en: "GitHub Virtual Pet",
+    },
+    logo: gitagotchi,
+    screenshot: gitagotchiweb,
+    technologies: [react],
+    description: {
+      es: "Un tamagotchi que evoluciona segun tu actividad en GitHub. Mantén a tu Gitagotchi feliz contribuyendo codigo regularmente. Gitagotchi conecta con la API publica de GitHub para visualizar tu perfil, repositorios y eventos de actividad. Tu mascota virtual cambia de estado segun tu frecuencia de commits.",
+      en: "A tamagotchi that evolves according to your activity on GitHub. Keep your Gitagotchi happy by contributing code regularly. Gitagotchi connects to the public GitHub API to view your profile, repositories, and activity events. Your virtual pet changes status depending on your commit frequency.",
+    },
+    url: "https://gitagotchi.netlify.app/",
+    github: "https://github.com/irenealcaine/gitagotchi",
+    color: "purple",
   },
 ];
