@@ -11,6 +11,7 @@ import resources from "../assets/code.svg";
 import cv from "../assets/cv.png";
 import logosaurus from "../assets/logosaurus.png";
 import gitagotchi from "../assets/gitagotchi-happy.png";
+import jsonizador from "../assets/json.svg";
 
 import todoweb from "../assets/todododo-web.png";
 import weatherweb from "../assets/tiempo-web.png";
@@ -25,6 +26,7 @@ import resourcesweb from "../assets/resources-web.png";
 import cvweb from "../assets/cvweb.png";
 import dinosapiweb from "../assets/dinosapiweb.png";
 import gitagotchiweb from "../assets/gitagotchi2.png";
+import jsonizadorweb from "../assets/jsonizadorweb.png";
 
 import react from "../assets/react.svg";
 import vue from "../assets/vue.svg";
@@ -239,7 +241,7 @@ export const projects = [
     github: "https://github.com/irenealcaine/dev-resources-app",
     color: "light-blue",
   },
-  
+
   {
     id: 120,
     slug: "cv-builder",
@@ -256,10 +258,10 @@ export const projects = [
     },
     url: "https://curriculum-vitae-builder-cv.netlify.app",
     github: "https://github.com/irenealcaine/cv-app",
-    color: "purple",
+    color: "dark-blue",
   },
 
-    {
+  {
     id: 130,
     slug: "jwe3-api",
     title: {
@@ -278,9 +280,9 @@ export const projects = [
     color: "lime",
   },
 
-      {
+  {
     id: 140,
-    slug: "Gitagotchi",
+    slug: "gitagotchi",
     title: {
       es: "Mascota virtual de GitHub",
       en: "GitHub Virtual Pet",
@@ -295,5 +297,24 @@ export const projects = [
     url: "https://gitagotchi.netlify.app/",
     github: "https://github.com/irenealcaine/gitagotchi",
     color: "purple",
+  },
+
+  {
+    id: 150,
+    slug: "jsonizador",
+    title: {
+      es: "Jsonizador",
+      en: "Jsonizador",
+    },
+    logo: jsonizador,
+    screenshot: jsonizadorweb,
+    technologies: [react],
+    description: {
+      es: "Web que reune varias herramientas para trabajar con JSON de forma visual e interactiva. Permite validar, explorar, crear y generar plantillas de estructuras JSON sin necesidad de instalacion local.",
+      en: "Web that brings together various tools for working with JSON in a visual and interactive way. Allows validating, exploring, creating, and generating templates for JSON structures without the need for local installation.",
+    },
+    url: "https://jsonizador-irene.netlify.app/",
+    github: "https://github.com/irenealcaine/jsonizador",
+    color: "yellow",
   },
 ];
