@@ -12,6 +12,7 @@ import cv from "../assets/cv.png";
 import logosaurus from "../assets/logosaurus.png";
 import gitagotchi from "../assets/gitagotchi-happy.png";
 import jsonizador from "../assets/json.svg";
+import colorfulthemes from "../assets/colorful_icon.png";
 
 import todoweb from "../assets/todododo-web.png";
 import weatherweb from "../assets/tiempo-web.png";
@@ -27,6 +28,7 @@ import cvweb from "../assets/cvweb.png";
 import dinosapiweb from "../assets/dinosapiweb.png";
 import gitagotchiweb from "../assets/gitagotchi2.png";
 import jsonizadorweb from "../assets/jsonizadorweb.png";
+import colorfulthemesweb from "../assets/rainbow.png";
 
 import react from "../assets/react.svg";
 import vue from "../assets/vue.svg";
@@ -315,6 +317,25 @@ export const projects = [
     },
     url: "https://jsonizador-irene.netlify.app/",
     github: "https://github.com/irenealcaine/jsonizador",
-    color: "yellow",
+    color: "orange",
+  },
+
+    {
+    id: 160,
+    slug: "a-little-colorful-themes",
+    title: {
+      es: "A little colorful themes",
+      en: "A little colorful themes",
+    },
+    logo: colorfulthemes,
+    screenshot: colorfulthemesweb,
+    technologies: [],
+    description: {
+      es: "Colección de temas oscuros y coloridos para Visual Studio Code. Elige el que más te guste y disfruta de una codificación colorida y cómoda.",
+      en: "A collection of colorful dark themes for Visual Studio Code. Pick the one you like and enjoy colorful, comfortable coding.",
+    },
+    url: "https://marketplace.visualstudio.com/items?itemName=irenealcaine.a-little-colorful-themes",
+    github: "https://github.com/irenealcaine/a-little-colorful-themes",
+    color: "pink",
   },
 ];
