@@ -241,7 +241,7 @@ export const projects = [
     },
     url: "https://dev-resources-irene.netlify.app",
     github: "https://github.com/irenealcaine/dev-resources-app",
-    color: "dark-blue",
+    color: "green",
   },
 
   {
@@ -260,7 +260,7 @@ export const projects = [
     },
     url: "https://curriculum-vitae-builder-cv.netlify.app",
     github: "https://github.com/irenealcaine/cv-app",
-    color: "purple",
+    color: "light-blue",
   },
 
   {
